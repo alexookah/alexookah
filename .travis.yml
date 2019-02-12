@@ -1,4 +1,17 @@
-deploy:
-  provider: firebase
-  token:
-    secure: ZJui+MTL71PiGOOJo6ST3p3V3SQSalFvcESIAKrplZuKLn6FeZUrN4vWwW43EgIZfvIWbRfiX4iKDLvHeBcyIEBO7NDe1oKBxNthh4hoBuVFKn8kI11pjoLlEA5BosQEQUjMjT17FGIgJqFHfCcsKkEtULh9y5gE7dFJ6zbsOSHLPXZHctqzHA/AB6lOncWOdMB/5UZ9aFuqRqPscr8S58ZWKx2rdDFCO9kEPrxLtPlVlCRUJJZpcB6c+7c0h3H7vNkRPv8d38Mo82+h5Rmo/jKx7A9qdg4FhNGMkj7T6LIFute85n6kpoKASnHBnzmkIWGwIDLk+i907xDKxihCpGQQzII/7cx2PsytA47vUx76J/ROvTXUViAzyLcCMZVroStxa/Vj7hjPREsgfS1n88/USy6W0KpTH3I4lNe/iRCUYuuplCnFyAUz6UODDZcIRo020cQeN2uhemwRqbrIxeSyZ0EYzi1ynF4PjUp05Xqu8npNu3/JOx7caOirj2gMOhOGOxaHtGTk+khCIMPKxhhmGB6kU0uKhB7rDu8Xf8mxXAPzDUJwDiscrQoN1aq5wk0RcFdsptlYyagJuKS9rAQKXkumX+2KBaL3I3HWhmo6nUBYDlNo4WCps8wlnDZlbBdn8npUkZpOUuAHiQ8uK7Y/T+jfODaXYqtItYuceE4=
+language: node_js
+
+node_js:
+ — "7"
+ 
+ branches:
+  only:
+    -master
+    
+script:
+ — echo "Deploy!!"
+ 
+install:
+ — npm install -g firebase-tools
+ 
+after_success:
+ — firebase deploy — project my-portfolio-page-fab67  - token $FIREBASE_TOKEN.
