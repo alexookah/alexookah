@@ -1,16 +1,13 @@
 language: node_js
 node_js:
-  - "5.11"
+  - "7"
 
 branches:
   only:
-    - master
-
-script:
- — echo "Deploy!!"
+    -master
  
 install:
- — npm install -g firebase-tools
+    —  npm install -g firebase-tools
 
 after_success:
-  - firebase deploy --token=${FIREBASE_API_TOKEN}
+    - firebase deploy — project my-portfolio-page-fab67 --token=${FIREBASE_API_TOKEN}
