@@ -239,6 +239,7 @@
             }
             h2, h4, ul li, a, address {
                 color: #fff;
+                opacity: 0.9;
             }
 
         }
@@ -254,6 +255,7 @@
         }
         .navbar-nav li a {
             color: #fff;
+            opacity: 0.9;
         }
 
         .navbar-nav li.active a {
@@ -3005,3 +3007,11 @@ BLOG Pagination
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.mh-about-tag-2 {
+    text-align: center;
+    ul {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
