@@ -1,6 +1,5 @@
 // Find if user has set a preference and react to changes
 (function initializeTheme() {
-    console.log('theme init')
     syncBetweenTabs()
     listenToOSChanges()
     enableTheme(
@@ -78,27 +77,18 @@ function returnThemeBasedOnTime() {
 
 // Switch to another theme
 function enableTheme(newTheme = 'white', withTransition = false, save = true) {
-    console.log('enable theme: ', newTheme)
     const root = document.body
     let otherTheme
     newTheme === 'white' ? otherTheme = 'dark' : otherTheme = 'white'
     let currentTheme
-    (root.classList.contains('dark-vertion')) ? currentTheme = 'dark' : 'white'
-    console.log('currentTheme theme: ', currentTheme)
+    (root.classList.contains('dark-vertion')) ? currentTheme = 'dark' : currentTheme = 'white'
     if (withTransition === true && newTheme !== currentTheme) animateThemeTransition()
 
     root.classList.add(newTheme + '-vertion')
     root.classList.remove(otherTheme + '-vertion')
 
-    console.log('newTheme: ', newTheme + '-vertion')
-
-    let button = document.getElementById(otherTheme + '-vertion' + '-button')
-    button.classList.add('enabled')
-    button.setAttribute('aria-pressed', false)
-
-    button = document.getElementById(newTheme + '-vertion' + '-button')
-    button.classList.remove('enabled')
-    button.setAttribute('aria-pressed', true)
+    const isDarkTheme = newTheme === 'dark' ? true : false
+    onChangeHandleThemeStyling(isDarkTheme)
 
     if (save) saveToLocalStorage('preference-theme', newTheme)
 }
@@ -135,4 +125,18 @@ function supportedAnimationEvent() {
     for (t in animations) {
         if (el.style[t] !== undefined) return animations[t]   // Return the name of the event fired by the browser to indicate a CSS animation has ended
     }
+}
+
+window.addEventListener('load', () => {
+    if (darkSwitch) {
+        darkSwitch.addEventListener('change', () => {
+            darkSwitch.checked ? enableTheme('dark', true) : enableTheme('white', true);
+        });
+    }
+});
+
+function onChangeHandleThemeStyling(isDarkTheme) {
+    document.getElementById('darkSwitch').checked = isDarkTheme
+
+    document.getElementById('myLogo').src = "assets/images/" + (isDarkTheme ? "me_animated_white.svg" : "me_animated.svg")
 }
