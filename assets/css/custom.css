@@ -26,3 +26,12 @@
   -moz-osx-font-smoothing: grayscale;
   display: block;
 }
+@media only screen and (max-width: 991px) {
+  .white-vertion .mh-xs-mobile-nav .bgColor {
+    background-color: white;
+  }
+
+  .dark-vertion .mh-xs-mobile-nav .bgColor {
+    background-color: #202026;
+  }
+}
