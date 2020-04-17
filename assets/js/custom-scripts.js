@@ -30,6 +30,18 @@
       });
       return false;
     });
+
+    var phonenumbers = [];
+    $(".phonenumber").each(function (i) {
+      phonenumbers.push($(this).text());
+      var newcontent = $(this).text().substr(0, $(this).text().length - 14) + "click to show"
+      $(this).text(newcontent);
+      $(this).one("click", function () {
+        $(this).text(phonenumbers[i]);
+      });
+    });
+
+
   });
   /* Loader Code End */
 
@@ -115,10 +127,10 @@
   | WOW ANIMATION
   |==================
   */
-  var wow = new WOW({
-    mobile: false  // trigger animations on mobile devices (default is true)
-  });
-  wow.init();
+  // var wow = new WOW({
+  //   mobile: false  // trigger animations on mobile devices (default is true)
+  // });
+  //wow.init();
 
 
   /*
@@ -127,7 +139,7 @@
   |================
   */
 
-  //AOS.init();
+  AOS.init();
 
   /*
   | ==========================
