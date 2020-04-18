@@ -31,16 +31,19 @@
       return false;
     });
 
-    var phonenumbers = [];
     $(".phonenumber").each(function (i) {
-      phonenumbers.push($(this).text());
-      var newcontent = $(this).text().substr(0, $(this).text().length - 14) + "click to show"
-      $(this).text(newcontent);
-      $(this).one("click", function () {
-        $(this).text(phonenumbers[i]);
+      const href = $(this).attr('href')
+      $(this).removeAttr("href");
+      const phone = href.replace('tel:+30', '+30 ')
+      const clickToShow = 'click to show'
+
+      $(this).html($(this).html().replace(phone, clickToShow))
+      $(this).one("click", function (e) {
+        e.preventDefault();
+        $(this).html($(this).html().replace(clickToShow, phone))
+        $(this).attr("href", href)
       });
     });
-
 
   });
   /* Loader Code End */
@@ -139,7 +142,10 @@
   |================
   */
 
-  AOS.init();
+  AOS.init({
+    // Global settings:
+    disable: 'mobile' // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  });
 
   /*
   | ==========================
@@ -154,6 +160,22 @@
       $(".nav-scroll").removeClass("nav-strict");
     }
   });
+
+
+  /*
+  | ==========================
+  | NAV FIXED ON WINDOWS RESIZE
+  | ==========================
+  */
+  // $(window).resize(function () {
+  //   var sWidth = $(window).width();
+  //   if (sWidth > 991) {
+  //     $('.navbar-collapse').removeClass('active');
+  //     $('.navbar-toggler').removeClass('active');
+  //     overlay.removeClass('active');
+  //     navc.removeClass('active');
+  //   }
+  // });
 
 
   /*
@@ -353,7 +375,7 @@
 
   // Smooth Scroll
   $(function () {
-    $('a[href*=#]:not([href=#])').click(function () {
+    $('a[href*=\\#]:not([href=\\#])').click(function () {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

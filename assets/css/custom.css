@@ -16,7 +16,7 @@
 .navbar-brand {
   padding-left: 10px;
   margin-top: 30px;
-  z-index: 1000;
+  z-index: 900;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -33,5 +33,11 @@
 
   .dark-vertion .mh-xs-mobile-nav .bgColor {
     background-color: #202026;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .home-padding {
+    padding-top: 150px;
   }
 }

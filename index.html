@@ -65,7 +65,7 @@
            NAVIGATION
         ===================
         -->
-    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header" data-aos="fade-up">
+    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header" data-aos="fade-up" data-aos-offset="0">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -78,7 +78,6 @@
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse bgColor" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-0 ml-auto">
                             <li class="nav-item active">
@@ -135,15 +134,18 @@
                             </h4>
 
                             <ul>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400"><i
-                                        class="fa fa-envelope"></i><a
-                                        href="mailto:alexlykesas@gmail.com">alexlykesas@gmail.com</a></li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><i
-                                        class="fa fa-phone"></i><a href="tel:+306978122549"
-                                        class="phonenumber">+30 6978122549</a></li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="600"><i
-                                        class="fa fa-map-marker"></i>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                    <a href="mailto:alexlykesas@gmail.com">
+                                        <i class="fa fa-envelope"></i>alexlykesas@gmail.com</a></li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                                    <a href="tel:+306978122549" class="phonenumber">
+                                        <i class="fa fa-phone"></i>
+                                        +30 6978122549
+                                    </a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                                     <a href="https://goo.gl/maps/nvfzAgDv8iqwK3KR8" target="_blank">
+                                        <i class="fa fa-map-marker"></i>
                                         <address>Thessaloniki, Greece</address>
                                     </a>
                                 </li>
@@ -641,42 +643,46 @@
         <div class="map-image image-bg">
             <div class="container">
                 <div class="row section-separator">
-                    <div class="col-sm-12 section-title" data-aos="fade-up" data-aos-duration="800"
+                    <div class="col-sm-12 section-title" data-aos="fade-down" data-aos-duration="800"
                         data-aos-delay="200">
                         <h3>Contact Me</h3>
                     </div>
                     <div class="col-sm-12 mh-footer-address">
                         <div class="row">
                             <div class="col-sm-12 col-md-2"></div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="mh-address-footer-item dark-bg shadow-1" data-aos="fade-up"
-                                    data-aos-duration="800" data-aos-delay="500">
-                                    <div class="each-icon">
-                                        <i class="fa fa-envelope-o"></i>
-                                    </div>
-                                    <div class="each-info">
-                                        <h4>Email</h4>
-                                        <a href="mailto:alexlykesas@gmail.com">alexlykesas@gmail.com</a><br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="mh-address-footer-item dark-bg shadow-1" data-aos="fade-up"
-                                    data-aos-duration="800" data-aos-delay="700">
-                                    <div class="each-icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <div class="each-info">
-                                        <h4>Phone</h4>
-                                        <a href="tel:+306978122549" class="phonenumber">+30 6978122549</a><br>
+                            <a href="mailto:alexlykesas@gmail.com">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1" data-aos="fade-up"
+                                        data-aos-duration="800" data-aos-delay="500">
+                                        <div class="each-icon">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Email</h4>
+                                            <a href="mailto:alexlykesas@gmail.com">alexlykesas@gmail.com</a><br>
+                                        </div>
                                     </div>
                                 </div>
+                            </a>
+                            <div class="col-sm-12 col-md-4">
+                                <a href="tel:+306978122549" class="phonenumber">
+                                    <div class="mh-address-footer-item dark-bg shadow-1" data-aos="fade-up"
+                                        data-aos-duration="800" data-aos-delay="700">
+                                        <div class="each-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Phone</h4>
+                                            +30 6978122549<br>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-sm-12 col-md-2"></div>
                         </div>
                     </div>
 
-                    <div class="col-sm-12 mh-copyright" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="col-sm-12 mh-copyright" data-aos="fade-up" data-aos-offset="0">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="text-left text-xs-center">
@@ -686,8 +692,9 @@
                             <div class="col-sm-6">
                                 <ul class="social-icon">
                                     <li><a href="https://github.com/alexookah"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/alexlykesas/"><i
-                                                class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/alexlykesas/">
+                                            <i class="fa fa-linkedin"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
