@@ -41,3 +41,9 @@
     padding-top: 150px;
   }
 }
+
+@media only screen and (max-width: 575px) {
+  .home-padding {
+    padding-top: 100px;
+  }
+}
