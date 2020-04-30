@@ -3,6 +3,7 @@
   border-color:#0bceaf;
 }
 
+
 .custom-control-input:focus:not(:checked)~.custom-control-label::before{
   border-color:#0bceaf;
   box-shadow:0 0 0 0.2rem rgba(53,247,216,.3)
@@ -12,6 +13,7 @@
 .nav-strict .navbar-brand {
   margin-top: 0px;
 }
+
 
 .navbar-brand {
   padding-left: 10px;
@@ -26,6 +28,8 @@
   -moz-osx-font-smoothing: grayscale;
   display: block;
 }
+
+
 @media only screen and (max-width: 991px) {
   .white-vertion .mh-xs-mobile-nav .bgColor {
     background-color: white;
@@ -36,14 +40,26 @@
   }
 }
 
+
 @media only screen and (max-width: 991px) {
   .home-padding {
     padding-top: 150px;
   }
 }
 
+
 @media only screen and (max-width: 575px) {
   .home-padding {
     padding-top: 100px;
   }
+}
+
+
+
+.blueimp-gallery>.slides>.slide>.slide-content {
+  margin: 0
+}
+
+.blueimp-gallery-carousel {
+  padding-bottom:220%
 }
