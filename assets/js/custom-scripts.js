@@ -144,7 +144,8 @@
 
   AOS.init({
     // Global settings:
-    disable: 'mobile' // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    once: false,
   });
 
   /*
@@ -390,7 +391,6 @@
   });
 
 
-
   /*
   |=================
   | CONTACT FORM
@@ -444,6 +444,118 @@
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
   }
+
+  // BlueImp Gallery
+  // blueimp.Gallery(document.getElementById('links').getElementsByTagName('a'), {
+  //   container: '#blueimp-gallery-carousel',
+  //   carousel: true
+  // })
+
+
+
+
+
+  $.getJSON('projects/data.json', function (data) {
+    // console.log(data)
+
+    // forEach Project in json
+    $.each(data, function () {
+      const currentProject = this.project
+      console.log(currentProject);
+      ///////    ortofolio icons
+      let html = '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' + this["categ"] + '">'
+      html += '<figure>'
+      html += '<img src="projects/' + this["project"] + "/" + this["frontImage"] + '">'
+      html += '<figcaption class="fig-caption">'
+      html += '<i class="fa fa-search"></i>'
+      html += '<h5 class="title">' + this.title + '</h5>'
+      html += '<span class="sub-title">' + this.subTitle + '</span>'
+      html += '<a data-fancybox data-src="#' + currentProject + '" id="gallery-' + currentProject + '" data-touch="false"></a>'
+      html += '</figcaption>'
+      html += '</figure >'
+      html += '</div >'
+      // console.log(html)
+      $(".portfolioContainer").append(html)
+
+      ///////    modal info
+      let port = '<div class="mh-portfolio-modal" id="' + currentProject + '">'
+      port += '<div class="container">'
+      port += '<div class="row mh-portfolio-modal-inner">'
+      port += '<div class="col-sm-5">'
+      port += '<h2>' + this.title + '</h2>'
+      port += this["description"]
+      port += '<div class="mh-about-tag"> <ul>'
+
+      // keywords
+      $.each(this.keywords, function (k, keyword) {
+        port += '<li><span>' + keyword + '</span></li>'
+      });
+
+
+      port += '<li><span>html</span></li>'
+      port += '<li><span>css</span></li>'
+      port += '</ul></div >'
+
+      // Live Demo Link
+      port += '<a href="' + this["liveDemoLink"] + '" target="_blank" class="btn btn-fill">Live Demo</a>'
+      port += '</div >'
+      port += '<div class="col-sm-7">'
+      port += '<div class="mh-portfolio-modal-img" style="text-align:center">'
+
+      // <!-- The BlueImp Gallery as inline carousel -->
+      port += '<div class="marvel-device iphone-x">'
+      port += '<div class="notch">'
+      port += '<div class="camera"></div>'
+      port += '<div class="speaker"></div>'
+      port += '</div>'
+      port += '<div class="top-bar"></div>'
+      port += '<div class="sleep"></div>'
+      port += '<div class="bottom-bar"></div>'
+      port += '<div class="volume"></div>'
+      port += '<div class="overflow">'
+      port += '<div class="shadow shadow--tr"></div>'
+      port += '<div class="shadow shadow--tl"></div>'
+      port += '<div class="shadow shadow--br"></div>'
+      port += '<div class="shadow shadow--bl"></div>'
+      port += '</div>'
+      port += '<div class="inner-shadow"></div>'
+      port += '<div class="screen" style="background-color: black;">'
+      // <!-- Content goes here -->
+      port += '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid" style="margin:0">'
+      port += '<div class="slides"></div>'
+      port += '<h3 class="title"></h3>'
+      // port += '<a class="prev">‹</a>'
+      // port += '<a class="next">›</a>'
+      port += '<a class="play-pause"></a> '
+      port += '<ol class="indicator"></ol>'
+      port += '</div>'
+      port += '</div>'
+      port += '</div>'
+      port += '</div>'
+      port += '</div>'
+      port += '</div>'
+      port += '</div>'
+      port += '</div>'
+      $(".mh-portfolio").append(port)
+
+
+      // portfolio images
+      var carouselLinks = []
+      $.each(this.images, function (k, image) {
+        carouselLinks.push('projects/' + currentProject + "/" + image)
+      })
+
+      $("#gallery-" + currentProject).click(function () {
+        setTimeout(function(){
+          blueimp.Gallery(carouselLinks, {
+            container: '#blueimp-gallery-carousel-' + currentProject,
+            carousel: true
+          })
+        },10)
+      });
+
+    });
+  });
 
 
 

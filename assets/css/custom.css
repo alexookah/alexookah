@@ -63,3 +63,11 @@
 .blueimp-gallery-carousel {
   padding-bottom:220%
 }
+
+.marvel-device.iphone-x {
+  background-color: black;
+}
+
+.marvel-device.iphone-x .volume, .marvel-device.iphone-x .volume:before, .marvel-device.iphone-x .volume:after, .marvel-device.iphone-x .sleep {
+  background-color: black;
+}
