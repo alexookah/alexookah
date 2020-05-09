@@ -126,8 +126,12 @@
         color: $black;
         opacity: 0.8;
     }
-    .mh-home .mh-header-info .social-icon li .fa:hover {
-        background-color: $black;
+    .mh-home .mh-header-info .social-icon li {
+        &:hover {
+            .fa, .fa, .far, .fal, .fad, .fab {
+                background-color: $black;
+            }
+        }
     }
     h1, h2, h3, h4, h5, h6,p, address, span, q {
         opacity: 0.8;
@@ -321,7 +325,7 @@
         background-color: $black-bg;
     }
 
-    // .mh-footer-address .mh-address-footer-item .each-icon .fa {
+    // .mh-footer-address .mh-address-footer-item .each-icon .fa, .fas, .far, .fal, .fad, .fab {
     //     border-color: $white;
     // }
 
@@ -333,8 +337,12 @@
     .img-color-overlay {
         background-color: rgba($black, 0.9);
     }
-    .mh-home .mh-header-info .social-icon li .fa:hover {
-        background-color: $white;
+    .mh-home .mh-header-info .social-icon li {
+        &:hover {
+            .fa, .fa, .far, .fal, .fad, .fab {
+                background-color: $white;
+            }
+        }
     }
     .page-item {
         &.active {
@@ -466,7 +474,7 @@
     text-align: right;
     .mh-work .mh-experience-deatils 
     .mh-work-item .work-responsibility
-    li .fa {
+    li .fa, .fas, .far, .fal, .fad, .fab {
         margin-left: 10px;
     }
     .mh-blog-post-info ul li strong {
@@ -667,11 +675,11 @@
                li {
                    display: inline-block;
                    margin: 10px 15px;
-                   .fa {
+                   .fa, .fas, .far, .fal, .fad, .fab {
                        margin-right: 10px;
                    }
                     &:hover {
-                        .fa {
+                        .fa, .fas, .far, .fal, .fad, .fab {
                             color: $main-color;
                         }
                     }
@@ -736,7 +744,7 @@
             margin-top: 20px;
             li {
                 margin: 10px 0;
-                .fa {
+                .fa, .fas, .far, .fal, .fad, .fab {
                     // padding: 4px 14px;
                     margin-right: 15px;
                     display: inline-block;
@@ -748,7 +756,7 @@
                     display: inline-block;
                 }
                 &:hover {
-                    .fa {
+                    .fa, .fas, .far, .fal, .fad, .fab {
                         color: $main-color;
                     }
                 }
@@ -757,7 +765,7 @@
         .social-icon {
             margin-top: 0;
             li {
-                .fa {
+                .fa, .fas, .far, .fal, .fad, .fab {
                     font-size: 18px;
                     line-height: 30px;
                     padding: 4px 14px;
@@ -832,7 +840,7 @@
         }
         .btn {
             margin-top: 20px;
-            .fa {
+            .fa, .fas, .far, .fal, .fad, .fab {
                 margin-left: 10px;
             }
         }
@@ -1121,7 +1129,7 @@
                     font-size: 14px;
                     line-height: 23px;
                     margin: 2px 0;
-                    .fa {
+                    .fa, .fas, .far, .fal, .fad, .fab {
                         font-size: 10px;
                         line-height: 23px;
                         margin-right: 10px;
@@ -1225,7 +1233,7 @@
                 background-color: darken($main-color, 5%);
             }
         }
-        .fa {
+        .fa, .fas, .far, .fal, .fad, .fab {
             font-size: 30px;
             line-height: 36px;
             margin-bottom: 20px;
@@ -1325,7 +1333,7 @@
             margin-top: 20px;
             padding: 0 160px;
         }
-        .fa {
+        .fa, .fas, .far, .fal, .fad, .fab {
             background-color: $white;
             border-radius: 50%;
             color: black;
@@ -1352,7 +1360,7 @@
         p {
             margin-top: 20px;
         }
-        .fa {
+        .fa, .fas, .far, .fal, .fad, .fab {
             background-color: $white;
             border-radius: 50%;
             color: black;
@@ -1378,7 +1386,7 @@
         p {
             margin-top: 20px;
         }
-        .fa {
+        .fa, .fas, .far, .fal, .fad, .fab {
             background-color: $white;
             border-radius: 50%;
             color: black;
@@ -1557,7 +1565,7 @@
         }
         .each-icon {
             margin-bottom: 30px;
-            .fa {
+            .fa, .fas, .far, .fal, .fad, .fab {
                 text-align: center;
                 width: 100px;
                 height: 100px;
@@ -2284,11 +2292,11 @@
                     opacity: 0;
                 }
                 
-                .fa {
+                .fa, .fas, .far, .fal, .fad, .fab {
                     margin: 0;
                     padding: 0;
                     font-size: 24px;
-                    font-weight: 400;
+                    // font-weight: 400;
                     line-height: 35px;
                     position: absolute;
                     text-align: center;
@@ -2395,7 +2403,7 @@
                             -webkit-font-smoothing: antialiased;
                             -moz-osx-font-smoothing: grayscale;
                         }
-                    .fa {
+                    .fa, .fas, .far, .fal, .fad, .fab {
                         transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
                         -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
                         -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
@@ -2521,7 +2529,7 @@
       width: 50px;
       right: -10%;
     }
-    .owl-next .fa {
+    .owl-next .fa, .fas, .far, .fal, .fad, .fab {
       font-size: 40px;
       margin-left: 15px;
     }
@@ -2533,7 +2541,7 @@
       height: 50px;
       width: 50px;
     }
-    .owl-prev .fa {
+    .owl-prev .fa, .fas, .far, .fal, .fad, .fab {
     //   color: $white;
       font-size: 40px;
       margin-left: 10px;
@@ -2558,7 +2566,7 @@
     .mh-service-item {
         padding: 20px;
         border-radius: 4px;
-        .fa {
+        .fa, .fas, .far, .fal, .fad, .fab {
             font-size: 30px;
             margin-bottom: 20px;
             margin-top: 16px;
@@ -2579,7 +2587,7 @@
         }
         a {
             color: $main-color;
-            .fa {
+            .fa, .fas, .far, .fal, .fad, .fab {
                 font-size: 16px;
                 line-height: 27px;
                 margin-left: 6px;
@@ -2755,7 +2763,7 @@ BLOG Pagination
 .mh-blog-next-prev-post {
     a {
         color: $main-color;
-        .fa {
+        .fa, .fas, .far, .fal, .fad, .fab {
             margin: 0 4px;
         }
     }
@@ -2907,8 +2915,10 @@ BLOG Pagination
     border-color: transparent;
     background-color: #6D40e3;
   }
-  .header-slider .slide-tablecell .slide-btn i.fa {
-    margin-left: 10px;
+  .header-slider .slide-tablecell .slide-btn {
+    i.fa, i.fas, i.far, i.fal, i.fad, i.fab {
+        margin-left: 10px;
+    }
   }
   .header-slider .slide-tablecell .slide-text > *:nth-child(1) {
     animation-duration: .3s;

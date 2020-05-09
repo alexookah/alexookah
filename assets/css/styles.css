@@ -799,7 +799,7 @@ button:focus {
   color: #000;
   opacity: 0.8;
 }
-.white-vertion .mh-home .mh-header-info .social-icon li .fa:hover {
+.white-vertion .mh-home .mh-header-info .social-icon li:hover .fa, .white-vertion .mh-home .mh-header-info .social-icon li:hover .fa, .white-vertion .mh-home .mh-header-info .social-icon li:hover .far, .white-vertion .mh-home .mh-header-info .social-icon li:hover .fal, .white-vertion .mh-home .mh-header-info .social-icon li:hover .fad, .white-vertion .mh-home .mh-header-info .social-icon li:hover .fab {
   background-color: #000;
 }
 .white-vertion h1, .white-vertion h2, .white-vertion h3, .white-vertion h4, .white-vertion h5, .white-vertion h6, .white-vertion p, .white-vertion address, .white-vertion span, .white-vertion q {
@@ -975,7 +975,7 @@ button:focus {
 .dark-vertion .img-color-overlay {
   background-color: rgba(0, 0, 0, 0.9);
 }
-.dark-vertion .mh-home .mh-header-info .social-icon li .fa:hover {
+.dark-vertion .mh-home .mh-header-info .social-icon li:hover .fa, .dark-vertion .mh-home .mh-header-info .social-icon li:hover .fa, .dark-vertion .mh-home .mh-header-info .social-icon li:hover .far, .dark-vertion .mh-home .mh-header-info .social-icon li:hover .fal, .dark-vertion .mh-home .mh-header-info .social-icon li:hover .fad, .dark-vertion .mh-home .mh-header-info .social-icon li:hover .fab {
   background-color: #fff;
 }
 .dark-vertion .page-item.active .page-link {
@@ -1095,7 +1095,8 @@ button:focus {
 .mh-rtl {
   text-align: right;
 }
-.mh-rtl .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa {
+.mh-rtl .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa,
+.mh-rtl .fas, .mh-rtl .far, .mh-rtl .fal, .mh-rtl .fad, .mh-rtl .fab {
   margin-left: 10px;
 }
 .mh-rtl .mh-blog-post-info ul li strong {
@@ -1290,10 +1291,10 @@ button:focus {
   display: inline-block;
   margin: 10px 15px;
 }
-.mh-home-2 .mh-header-info ul.mh-home-contact li .fa {
+.mh-home-2 .mh-header-info ul.mh-home-contact li .fa, .mh-home-2 .mh-header-info ul.mh-home-contact li .fas, .mh-home-2 .mh-header-info ul.mh-home-contact li .far, .mh-home-2 .mh-header-info ul.mh-home-contact li .fal, .mh-home-2 .mh-header-info ul.mh-home-contact li .fad, .mh-home-2 .mh-header-info ul.mh-home-contact li .fab {
   margin-right: 10px;
 }
-.mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fa {
+.mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fa, .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fas, .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .far, .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fal, .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fad, .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fab {
   color: #0bceaf;
 }
 .mh-home-2 .mh-header-info .mh-about-tag {
@@ -1345,20 +1346,20 @@ button:focus {
 .mh-home .mh-header-info ul li {
   margin: 10px 0;
 }
-.mh-home .mh-header-info ul li .fa {
+.mh-home .mh-header-info ul li .fa, .mh-home .mh-header-info ul li .fas, .mh-home .mh-header-info ul li .far, .mh-home .mh-header-info ul li .fal, .mh-home .mh-header-info ul li .fad, .mh-home .mh-header-info ul li .fab {
   margin-right: 15px;
   display: inline-block;
 }
 .mh-home .mh-header-info ul li address {
   display: inline-block;
 }
-.mh-home .mh-header-info ul li:hover .fa {
+.mh-home .mh-header-info ul li:hover .fa, .mh-home .mh-header-info ul li:hover .fas, .mh-home .mh-header-info ul li:hover .far, .mh-home .mh-header-info ul li:hover .fal, .mh-home .mh-header-info ul li:hover .fad, .mh-home .mh-header-info ul li:hover .fab {
   color: #0bceaf;
 }
 .mh-home .mh-header-info .social-icon {
   margin-top: 0;
 }
-.mh-home .mh-header-info .social-icon li .fa {
+.mh-home .mh-header-info .social-icon li .fa, .mh-home .mh-header-info .social-icon li .fas, .mh-home .mh-header-info .social-icon li .far, .mh-home .mh-header-info .social-icon li .fal, .mh-home .mh-header-info .social-icon li .fad, .mh-home .mh-header-info .social-icon li .fab {
   font-size: 18px;
   line-height: 30px;
   padding: 4px 14px;
@@ -1369,7 +1370,7 @@ button:focus {
   transition: 0.3s;
   border-radius: 3px;
 }
-.mh-home .mh-header-info .social-icon li .fa:hover {
+.mh-home .mh-header-info .social-icon li .fa:hover, .mh-home .mh-header-info .social-icon li .fas:hover, .mh-home .mh-header-info .social-icon li .far:hover, .mh-home .mh-header-info .social-icon li .fal:hover, .mh-home .mh-header-info .social-icon li .fad:hover, .mh-home .mh-header-info .social-icon li .fab:hover {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -1432,7 +1433,7 @@ button:focus {
 .mh-about .mh-about-inner .btn {
   margin-top: 20px;
 }
-.mh-about .mh-about-inner .btn .fa {
+.mh-about .mh-about-inner .btn .fa, .mh-about .mh-about-inner .btn .fas, .mh-about .mh-about-inner .btn .far, .mh-about .mh-about-inner .btn .fal, .mh-about .mh-about-inner .btn .fad, .mh-about .mh-about-inner .btn .fab {
   margin-left: 10px;
 }
 
@@ -1696,7 +1697,7 @@ button:focus {
   line-height: 23px;
   margin: 2px 0;
 }
-.mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa {
+.mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa, .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fas, .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .far, .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fal, .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fad, .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fab {
   font-size: 10px;
   line-height: 23px;
   margin-right: 10px;
@@ -1794,7 +1795,7 @@ button:focus {
   transition: 0.3s;
   background-color: #0ab69a;
 }
-.mh-pricing .mh-pricing .fa {
+.mh-pricing .mh-pricing .fa, .mh-pricing .mh-pricing .fas, .mh-pricing .mh-pricing .far, .mh-pricing .mh-pricing .fal, .mh-pricing .mh-pricing .fad, .mh-pricing .mh-pricing .fab {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 20px;
@@ -1891,7 +1892,7 @@ button:focus {
   margin-top: 20px;
   padding: 0 160px;
 }
-.mh-video .each-video .fa {
+.mh-video .each-video .fa, .mh-video .each-video .fas, .mh-video .each-video .far, .mh-video .each-video .fal, .mh-video .each-video .fad, .mh-video .each-video .fab {
   background-color: #fff;
   border-radius: 50%;
   color: black;
@@ -1914,7 +1915,7 @@ button:focus {
 .mh-quates .each-quates p {
   margin-top: 20px;
 }
-.mh-quates .each-quates .fa {
+.mh-quates .each-quates .fa, .mh-quates .each-quates .fas, .mh-quates .each-quates .far, .mh-quates .each-quates .fal, .mh-quates .each-quates .fad, .mh-quates .each-quates .fab {
   background-color: #fff;
   border-radius: 50%;
   color: black;
@@ -1936,7 +1937,7 @@ button:focus {
 .mh-video .each-video p {
   margin-top: 20px;
 }
-.mh-video .each-video .fa {
+.mh-video .each-video .fa, .mh-video .each-video .fas, .mh-video .each-video .far, .mh-video .each-video .fal, .mh-video .each-video .fad, .mh-video .each-video .fab {
   background-color: #fff;
   border-radius: 50%;
   color: black;
@@ -2101,7 +2102,7 @@ button:focus {
 .mh-footer-address .mh-address-footer-item .each-icon {
   margin-bottom: 30px;
 }
-.mh-footer-address .mh-address-footer-item .each-icon .fa {
+.mh-footer-address .mh-address-footer-item .each-icon .fa, .mh-footer-address .mh-address-footer-item .each-icon .fas, .mh-footer-address .mh-address-footer-item .each-icon .far, .mh-footer-address .mh-address-footer-item .each-icon .fal, .mh-footer-address .mh-address-footer-item .each-icon .fad, .mh-footer-address .mh-address-footer-item .each-icon .fab {
   text-align: center;
   width: 100px;
   height: 100px;
@@ -2797,11 +2798,10 @@ button:focus {
   z-index: -1;
   opacity: 0;
 }
-.mh-project-gallery .grid-item figure figcaption .fa {
+.mh-project-gallery .grid-item figure figcaption .fa, .mh-project-gallery .grid-item figure figcaption .fas, .mh-project-gallery .grid-item figure figcaption .far, .mh-project-gallery .grid-item figure figcaption .fal, .mh-project-gallery .grid-item figure figcaption .fad, .mh-project-gallery .grid-item figure figcaption .fab {
   margin: 0;
   padding: 0;
   font-size: 24px;
-  font-weight: 400;
   line-height: 35px;
   position: absolute;
   text-align: center;
@@ -2911,7 +2911,7 @@ button:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.mh-project-gallery .grid-item figure:hover figcaption .fa {
+.mh-project-gallery .grid-item figure:hover figcaption .fa, .mh-project-gallery .grid-item figure:hover figcaption .fas, .mh-project-gallery .grid-item figure:hover figcaption .far, .mh-project-gallery .grid-item figure:hover figcaption .fal, .mh-project-gallery .grid-item figure:hover figcaption .fad, .mh-project-gallery .grid-item figure:hover figcaption .fab {
   transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
   -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
   -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
@@ -3033,7 +3033,7 @@ button:focus {
   width: 50px;
   right: -10%;
 }
-.mh-single-project-slide-by-side .owl-next .fa {
+.mh-single-project-slide-by-side .owl-next .fa, .mh-single-project-slide-by-side .fas, .mh-single-project-slide-by-side .far, .mh-single-project-slide-by-side .fal, .mh-single-project-slide-by-side .fad, .mh-single-project-slide-by-side .fab {
   font-size: 40px;
   margin-left: 15px;
 }
@@ -3045,7 +3045,7 @@ button:focus {
   height: 50px;
   width: 50px;
 }
-.mh-single-project-slide-by-side .owl-prev .fa {
+.mh-single-project-slide-by-side .owl-prev .fa, .mh-single-project-slide-by-side .fas, .mh-single-project-slide-by-side .far, .mh-single-project-slide-by-side .fal, .mh-single-project-slide-by-side .fad, .mh-single-project-slide-by-side .fab {
   font-size: 40px;
   margin-left: 10px;
 }
@@ -3066,18 +3066,18 @@ button:focus {
   padding: 20px;
   border-radius: 4px;
 }
-.mh-service .mh-service-item .fa {
+.mh-service .mh-service-item .fa, .mh-service .mh-service-item .fas, .mh-service .mh-service-item .far, .mh-service .mh-service-item .fal, .mh-service .mh-service-item .fad, .mh-service .mh-service-item .fab {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 16px;
 }
-.mh-service .mh-service-item .fa.purple-color {
+.mh-service .mh-service-item .fa.purple-color, .mh-service .mh-service-item .fas.purple-color, .mh-service .mh-service-item .far.purple-color, .mh-service .mh-service-item .fal.purple-color, .mh-service .mh-service-item .fad.purple-color, .mh-service .mh-service-item .fab.purple-color {
   color: #9774fa;
 }
-.mh-service .mh-service-item .fa.iron-color {
+.mh-service .mh-service-item .fa.iron-color, .mh-service .mh-service-item .fas.iron-color, .mh-service .mh-service-item .far.iron-color, .mh-service .mh-service-item .fal.iron-color, .mh-service .mh-service-item .fad.iron-color, .mh-service .mh-service-item .fab.iron-color {
   color: #ed7256;
 }
-.mh-service .mh-service-item .fa.sky-color {
+.mh-service .mh-service-item .fa.sky-color, .mh-service .mh-service-item .fas.sky-color, .mh-service .mh-service-item .far.sky-color, .mh-service .mh-service-item .fal.sky-color, .mh-service .mh-service-item .fad.sky-color, .mh-service .mh-service-item .fab.sky-color {
   color: #2796e2;
 }
 .mh-service .mh-service-item h3 {
@@ -3088,7 +3088,7 @@ button:focus {
 .mh-service .mh-service-item a {
   color: #0bceaf;
 }
-.mh-service .mh-service-item a .fa {
+.mh-service .mh-service-item a .fa, .mh-service .mh-service-item a .fas, .mh-service .mh-service-item a .far, .mh-service .mh-service-item a .fal, .mh-service .mh-service-item a .fad, .mh-service .mh-service-item a .fab {
   font-size: 16px;
   line-height: 27px;
   margin-left: 6px;
@@ -3236,7 +3236,7 @@ BLOG Pagination
 .mh-blog-next-prev-post a {
   color: #0bceaf;
 }
-.mh-blog-next-prev-post a .fa {
+.mh-blog-next-prev-post a .fa, .mh-blog-next-prev-post a .fas, .mh-blog-next-prev-post a .far, .mh-blog-next-prev-post a .fal, .mh-blog-next-prev-post a .fad, .mh-blog-next-prev-post a .fab {
   margin: 0 4px;
 }
 
@@ -3408,7 +3408,7 @@ BLOG Pagination
   background-color: #6D40e3;
 }
 
-.header-slider .slide-tablecell .slide-btn i.fa {
+.header-slider .slide-tablecell .slide-btn i.fa, .header-slider .slide-tablecell .slide-btn i.fas, .header-slider .slide-tablecell .slide-btn i.far, .header-slider .slide-tablecell .slide-btn i.fal, .header-slider .slide-tablecell .slide-btn i.fad, .header-slider .slide-tablecell .slide-btn i.fab {
   margin-left: 10px;
 }
 

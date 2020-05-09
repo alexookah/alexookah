@@ -65,7 +65,7 @@
       dots: false,
       nav: false,
       autoplayTimeout: 3000,
-      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+      navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
       animateIn: "zoomIn",
       animateOut: "fadeOutDown",
       autoplayHoverPause: false,
@@ -188,7 +188,7 @@
     var width = $(this).text();
     $(this).css("width", width)
       .empty()
-      .append('<i class="fa fa-circle"></i>');
+      .append('<i class="fas fa-circle"></i>');
   });
 
   /*
@@ -295,7 +295,7 @@
     loop: false,
     responsiveClass: true,
     nav: true,
-    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
     dots: false,
     autoplay: false,
     smartSpeed: 450,
@@ -462,12 +462,12 @@
     $.each(data, function () {
       const currentProject = this.project
       console.log(currentProject);
-      ///////    ortofolio icons
+      ///////    portofolio icons
       let html = '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' + this["categ"] + '">'
       html += '<figure>'
       html += '<img src="projects/' + this["project"] + "/" + this["frontImage"] + '">'
       html += '<figcaption class="fig-caption">'
-      html += '<i class="fa fa-search"></i>'
+      html += '<i class="fas fa-search"></i>'
       html += '<h5 class="title">' + this.title + '</h5>'
       html += '<span class="sub-title">' + this.subTitle + '</span>'
       html += '<a data-fancybox data-src="#' + currentProject + '" id="gallery-' + currentProject + '" data-touch="false"></a>'
@@ -503,6 +503,8 @@
       port += '<div class="mh-portfolio-modal-img" style="text-align:center">'
 
       // <!-- The BlueImp Gallery as inline carousel -->
+      // port += '<a class="my-screen-nav-button left-button">‹</a>'
+
       port += '<div class="marvel-device iphone-x">'
       port += '<div class="notch">'
       port += '<div class="camera"></div>'
@@ -518,19 +520,21 @@
       port += '<div class="shadow shadow--br"></div>'
       port += '<div class="shadow shadow--bl"></div>'
       port += '</div>'
-      port += '<div class="inner-shadow"></div>'
+      // port += '<div class="inner-shadow"></div>'
       port += '<div class="screen" style="background-color: black;">'
       // <!-- Content goes here -->
       port += '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid" style="margin:0">'
       port += '<div class="slides"></div>'
       port += '<h3 class="title"></h3>'
-      // port += '<a class="prev">‹</a>'
-      // port += '<a class="next">›</a>'
-      port += '<a class="play-pause"></a> '
+      port += '<a class="prev">‹</a>'
+      port += '<a class="next">›</a>'
+      port += '<a class="fullscreen"></a>'
+      port += '<a class="play-pause"></a>'
       port += '<ol class="indicator"></ol>'
       port += '</div>'
       port += '</div>'
       port += '</div>'
+      // port += '<a class="my-screen-nav-button right-button">›</a>'
       port += '</div>'
       port += '</div>'
       port += '</div>'
@@ -545,13 +549,30 @@
         carouselLinks.push('projects/' + currentProject + "/" + image)
       })
 
+      $("#fullscreen-gallery").click(function () {
+        blueimp.Gallery(carouselLinks);
+      });
+
       $("#gallery-" + currentProject).click(function () {
-        setTimeout(function(){
+        setTimeout(function () {
           blueimp.Gallery(carouselLinks, {
             container: '#blueimp-gallery-carousel-' + currentProject,
-            carousel: true
+            carousel: true,
           })
-        },10)
+        }, 10)
+      });
+
+
+      $('#fullscreen-gallery-pao-bc').click(function () {
+        console.log('jclick ere')
+        if ($('#blueimp-gallery-carousel-' + currentProject).hasClass('blueimp-gallery-carousel-' + currentProject)) {
+          $('#blueimp-gallery-carousel-' + currentProject).removeClass('blueimp-gallery-carousel-' + currentProject);
+          console.log('jere')
+        }
+        else {
+          $('#blueimp-gallery-carousel-' + currentProject).addClass('blueimp-gallery-carousel-' + currentProject);
+          console.log('jere121')
+        }
       });
 
     });
