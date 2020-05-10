@@ -461,7 +461,7 @@
     // forEach Project in json
     $.each(data, function () {
       const currentProject = this.project
-      console.log(currentProject);
+      // console.log(currentProject);
       ///////    portofolio icons
       let html = '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' + this["categ"] + '">'
       html += '<figure>'
@@ -496,43 +496,77 @@
       port += '<li><span>css</span></li>'
       port += '</ul></div >'
 
-      // Live Demo Link
-      port += '<a href="' + this["liveDemoLink"] + '" target="_blank" class="btn btn-fill">Live Demo</a>'
+      // Demo Links
+      $.each(this.demoLinks, function (k, eachLink) {
+        // console.log(k, link)
+        port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill">' + eachLink.name + '</a></p>'
+      });
+
+      // if (this.sourceType == "liveDemo") {
+        
+
+      // } else if (this.sourceType == "github") {
+        // port += '<a href="' + this["liveDemoLink"] + '" target="_blank" class="btn btn-fill">Github</a>'
+      // }
       port += '</div >'
-      port += '<div class="col-sm-7">'
+      if (this.type == "mobile" || this.type == "cover") {
+        port += '<div class="col-sm-7 d-flex align-items-center">'
+      } else {
+        port += '<div class="col-sm-7">'
+      }
       port += '<div class="mh-portfolio-modal-img" style="text-align:center">'
 
       // <!-- The BlueImp Gallery as inline carousel -->
       // port += '<a class="my-screen-nav-button left-button">‹</a>'
 
-      port += '<div class="marvel-device iphone-x">'
-      port += '<div class="notch">'
-      port += '<div class="camera"></div>'
-      port += '<div class="speaker"></div>'
-      port += '</div>'
-      port += '<div class="top-bar"></div>'
-      port += '<div class="sleep"></div>'
-      port += '<div class="bottom-bar"></div>'
-      port += '<div class="volume"></div>'
-      port += '<div class="overflow">'
-      port += '<div class="shadow shadow--tr"></div>'
-      port += '<div class="shadow shadow--tl"></div>'
-      port += '<div class="shadow shadow--br"></div>'
-      port += '<div class="shadow shadow--bl"></div>'
-      port += '</div>'
-      // port += '<div class="inner-shadow"></div>'
-      port += '<div class="screen" style="background-color: black;">'
-      // <!-- Content goes here -->
-      port += '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid" style="margin:0">'
-      port += '<div class="slides"></div>'
-      port += '<h3 class="title"></h3>'
-      port += '<a class="prev">‹</a>'
-      port += '<a class="next">›</a>'
-      port += '<a class="fullscreen"></a>'
-      port += '<a class="play-pause"></a>'
-      port += '<ol class="indicator"></ol>'
-      port += '</div>'
-      port += '</div>'
+      if (this.type == "mobile") {
+        port += '<div class="marvel-device iphone-x">'
+        port += '   <div class="notch">'
+        port += '     <div class="camera"></div>'
+        port += '     <div class="speaker"></div>'
+        port += '   </div>'
+        port += '   <div class="top-bar"></div>'
+        port += '   <div class="sleep"></div>'
+        port += '   <div class="bottom-bar"></div>'
+        port += '   <div class="volume"></div>'
+        port += '   <div class="overflow">'
+        port += '     <div class="shadow shadow--tr"></div>'
+        port += '     <div class="shadow shadow--tl"></div>'
+        port += '     <div class="shadow shadow--br"></div>'
+        port += '     <div class="shadow shadow--bl"></div>'
+        port += '   </div>'
+        // port += '<div class="inner-shadow"></div>'
+
+        port += '   <div class="screen" style="background-color: black;">'
+        // <!-- Content goes here -->
+        port += '   <div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid" style="margin:0">'
+        port += '     <div class="slides"></div>'
+        port += '     <h3 class="title"></h3>'
+        port += '     <a class="prev">‹</a>'
+        port += '     <a class="next">›</a>'
+        port += '     <a class="fullscreen"></a>'
+        port += '     <a class="play-pause"></a>'
+        port += '     <ol class="indicator"></ol>'
+        port += '   </div>'
+        port += '</div>'
+
+      } else if (this.type == "desktop") {
+        port += '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid">'
+        port += '  <div class="slides"></div>'
+        port += '  <h3 class="title"></h3>'
+        port += '  <a class="prev">‹</a>'
+        port += '  <a class="next">›</a>'
+        port += '  <a class="fullscreen"></a>'
+        port += '  <a class="play-pause"></a>'
+        port += '  <ol class="indicator"></ol>'
+        port += '</div>'
+        
+        
+      } else if (this.type == "cover") {
+        port += '<img class="img-fluid" src="projects/' + this.project + "/" + this.images[0] + '">'
+      }
+
+
       port += '</div>'
       // port += '<a class="my-screen-nav-button right-button">›</a>'
       port += '</div>'
@@ -542,16 +576,12 @@
       port += '</div>'
       $(".mh-portfolio").append(port)
 
-
       // portfolio images
       var carouselLinks = []
       $.each(this.images, function (k, image) {
         carouselLinks.push('projects/' + currentProject + "/" + image)
       })
 
-      $("#fullscreen-gallery").click(function () {
-        blueimp.Gallery(carouselLinks);
-      });
 
       $("#gallery-" + currentProject).click(function () {
         setTimeout(function () {
@@ -559,21 +589,26 @@
             container: '#blueimp-gallery-carousel-' + currentProject,
             carousel: true,
           })
-        }, 10)
+        }, 200)
       });
 
 
-      $('#fullscreen-gallery-pao-bc').click(function () {
-        console.log('jclick ere')
-        if ($('#blueimp-gallery-carousel-' + currentProject).hasClass('blueimp-gallery-carousel-' + currentProject)) {
-          $('#blueimp-gallery-carousel-' + currentProject).removeClass('blueimp-gallery-carousel-' + currentProject);
-          console.log('jere')
-        }
-        else {
-          $('#blueimp-gallery-carousel-' + currentProject).addClass('blueimp-gallery-carousel-' + currentProject);
-          console.log('jere121')
-        }
-      });
+      // $("#fullscreen-gallery").click(function () {
+      //   blueimp.Gallery(carouselLinks);
+      // });
+
+
+      // $('#fullscreen-gallery-pao-bc').click(function () {
+      //   console.log('jclick ere')
+      //   if ($('#blueimp-gallery-carousel-' + currentProject).hasClass('blueimp-gallery-carousel-' + currentProject)) {
+      //     $('#blueimp-gallery-carousel-' + currentProject).removeClass('blueimp-gallery-carousel-' + currentProject);
+      //     console.log('jere')
+      //   }
+      //   else {
+      //     $('#blueimp-gallery-carousel-' + currentProject).addClass('blueimp-gallery-carousel-' + currentProject);
+      //     console.log('jere121')
+      //   }
+      // });
 
     });
   });
