@@ -1,0 +1,355 @@
+[
+    {
+        "project": "sport-fm",
+        "frontImage": "front.png",
+        "title": "Sport-FM",
+        "releaseDate": "2018",
+        "subTitle": "Sport News App",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "<p>Sport FM is a Live Radio Stream Application with 15K unique users/month.</p><p>The user can read daily or past Newspapers. Schedule notifications to get notified when the events start, view team standings and WebTV videos</p>",
+        "images": [
+            "0.jpg",
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg",
+            "5.jpg",
+            "6.jpg"
+        ],
+        "keywords": [
+            "Swift",
+            "Restful API",
+            "local & remote push notifications",
+            "live radio stream",
+            "webTV videos",
+            "live events",
+            "newspapers",
+            "caching",
+            "offline-mode",
+            "adMob"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/gr/app/sport-fm-946/id591053245?l=en",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        }]
+    },
+    {
+        "project": "pao-bc",
+        "frontImage": "front.png",
+        "title": "Pao BC",
+        "releaseDate": "2016",
+        "subTitle": "MatchProgram Informational Application",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "<p>MatchProgram is an application that shows information for Basketball Team 'PAO.</p><p>The user can view team standings, match statistics (teams and players), read news and articles, use the Calendar which shows all past and future matches.",
+        "images": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg",
+            "5.jpg",
+            "6.jpg",
+            "7.jpg",
+            "8.jpg",
+            "9.jpg"
+        ],
+        "keywords": [
+            "Swift",
+            "Restful API",
+            "caching",
+            "remote push notifications",
+            "calendar"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/gr/app/pao-bc-opap/id1176406924?l=en",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        }]
+    },
+    {
+        "project": "the-petbook",
+        "frontImage": "front.png",
+        "title": "The Petbook",
+        "releaseDate": "2018",
+        "subTitle": "Medical Application",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "<p>A Medical Application for pet owners.</p> <p>The application is build on a restful Drupal Server, that allows users to view website's blog posts, register & authenticate, add notes & reminders, upload pet's photos and get notified when they should visit their vet owner.</p>",
+        "images": [
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png",
+            "9.png"
+        ],
+        "keywords": [
+            "Swift",
+            "Drupal restful API",
+            "Remote push notifications"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/us/app/the-petbook/id1425395359?l=en",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        }]
+    },
+
+    {
+        "project": "cava-brouzos",
+        "frontImage": "front.png",
+        "title": "Cava Brouzos",
+        "releaseDate": "2019",
+        "subTitle": "Delivery Application",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "<p>A delivery application for Cava Brouzos (B2B and B2C).</p> <p>The user can order products that are dynamically created from the backend (firebase), see previous orders and have multiple addresses.</p> <p>B2B customers login with email while B2C users login with phone number. The menu is structured in categories, subcategories and products.</p> <p>The Backend provides different menu's and products with different prices and discounts for dirrent types of B2B users. The design for every screen is generated from the backend.</p>",
+        "images": [
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png",
+            "9.png",
+            "10.png",
+            "11.png",
+            "12.png",
+            "13.png",
+            "14.png",
+            "15.png",
+            "16.png",
+            "17.png",
+            "18.png",
+            "19.png",
+            "20.png",
+            "21.png",
+            "22.png"
+        ],
+        "keywords": [
+            "Swift",
+            "Firebase",
+            "multi-language",
+            "offline mode"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/us/app/cava-brouzos/id1472766714?l=en",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        }]
+    },
+    {
+        "project": "mineral-micr",
+        "frontImage": "front.png",
+        "title": "Mineral Micr",
+        "releaseDate": "2017",
+        "subTitle": "Geology Database Application",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "<p>‎Mineral Micr is an application that includes a database of all common minerals.</p> <p>The user can filter minerals based on all available properties. Each mineral includes a video captured under the petrographic microscope that includes subtitles to explain the properties.</p><p>The application provides in-app purchase to unlock all minerals.</p>",
+        "images": [
+            "0.png",
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png",
+            "9.png"
+        ],
+        "keywords": [
+            "Swift",
+            "multi-language",
+            "YouTube native video player",
+            "subtitles",
+            "in-app purchases",
+            "dark-mode"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/gr/app/mineral-micr/id1209952339?l=en",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        }]
+    },
+    {
+        "project": "smart-delivery",
+        "frontImage": "front.png",
+        "title": "Smart Delivery",
+        "releaseDate": "2016",
+        "subTitle": "Food Delivery Application",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "<p>Smart Delivery is an application, order items from a menu based of a user's address, delivery or take away and checkout with a credit card.</p>",
+        "images": [
+            "0.png",
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png",
+            "9.png",
+            "10.png",
+            "11.png",
+            "12.png",
+            "13.png",
+            "14.png",
+            "15.png",
+            "16.png",
+            "17.png",
+            "18.png",
+            "19.png",
+            "20.png",
+            "21.png"
+        ],
+        "keywords": [
+            "Swift",
+            "Objective-C migration",
+            "multiple project targets for each store",
+            "multiple addresses",
+            "multi-language",
+            "remote push notifications",
+            "take-away",
+            "credit card payment"
+        ],
+        "demoLinks": [{
+            "link": "https://smartupweb.com/en/smart-delivery/",
+            "name": "Smart Delivery",
+            "icon": "fas fa-info"
+        },{
+            "link": "https://apps.apple.com/us/app/quick-n-easy/id1125833527",
+            "name": "App Store Demo",
+            "icon": "fab fa-apple"
+        },{
+            "link": "https://apps.apple.com/gr/app/masima/id1351761675?l=en",
+            "name": "Masima App Store",
+            "icon": "fab fa-apple"
+        }]
+    },
+    {
+        "project": "dancers-dionysos",
+        "frontImage": "front.png",
+        "title": "Dancers Dionysos",
+        "releaseDate": "2019",
+        "subTitle": "Event Manager Application",
+        "categ": "professional",
+        "type": "mobile",
+        "sourceType": "liveDemo",
+        "description": "<p>The use of this application allows the members of the Cultural Dance Club \"Dionysos\" to get notified for future events while it also gives the possibility to confirm their participation.</p>",
+        "images": [
+            "0.png",
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png"
+        ],
+        "keywords": [
+            "Angular 8",
+            "Capacitor",
+            "Ionic",
+            "Firebase",
+            "Remote push notifications",
+            "SMS notifications"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/us/app/%CF%87%CE%BF%CF%81%CE%B5%CF%85%CF%84%CE%B9%CE%BA%CF%8C%CF%82-%CF%83%CF%8D%CE%BB%CE%BB%CE%BF%CE%B3%CE%BF%CF%82-%CE%B4%CE%B9%CF%8C%CE%BD%CF%85%CF%83%CE%BF%CF%82/id1473426535?l=en",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        },{ 
+            "link": "https://play.google.com/store/apps/details?id=com.laef.alexookah.dancersdionysos&hl=en",
+            "name": "Google Play",
+            "icon": "fab fa-android"
+        },{ 
+            "link": "https://dancers-dionysos.web.app/",
+            "name": "PWA",
+            "icon": "fas fa-mobile-alt"
+        }]
+    },
+    {
+        "project": "marsala",
+        "frontImage": "front.png",
+        "title": "Marsala ",
+        "releaseDate": "2017",
+        "subTitle": "Order Management System",
+        "categ": "professional",
+        "type": "desktop",
+        "description": "<p>A PHP, MySQL and Javascript project was created, to manage orders betweeen clients and suppliers. Suppliers and Clients can have multiple emails, phones, contact persons and banking details‎. Multiple Dynamic SQL filters was implemented to search specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p>",
+        "images": [
+            "0.png",
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png",
+            "9.png",
+            "10.png",
+            "11.png",
+            "12.png",
+            "13.png",
+            "14.png"
+        ],
+        "keywords": [
+            "PHP",
+            "MySQL",
+            "Javascript",
+            "Ajax",
+            "jQuery",
+            "user access level",
+            "orders management system"
+        ],
+        "demoLinks": []
+    },
+    {
+        "project": "porn-detection",
+        "frontImage": "front.png",
+        "title": "Deep Learning - Pornography Detection",
+        "releaseDate": "2018",
+        "subTitle": "Deep Learning",
+        "categ": "personalAndOther",
+        "type": "cover",
+        "description": "<p>‎A Deep Neural network was used to classify the explicit content of a image, using the \"porn dataset\" from <a href='https://www.kaggle.com/ljlr34449/porn-data' target='_blank' style=''>kaggle</a> and a bikini dataset that i scrapped from google images.</p>",
+        "images": [
+            "cover.png"
+        ],
+        "keywords": [
+            "Python",
+            "Keras",
+            "Conv2D"
+        ],
+        "demoLinks": [{
+            "link": "https://github.com/Alexookah/Deep-Learning-Porn-Detection",
+            "name": "Github",
+            "icon": "fab fa-github"
+        }]
+    },
+    {
+        "project": "vodafone",
+        "frontImage": "front.png",
+        "title": "Vodafone iOS Application",
+        "releaseDate": "",
+        "protected": true,
+        "subTitle": "Password Protected",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "",
+        "images": [],
+        "keywords": [
+            "Swift"
+        ],
+        "demoLinks": []
+    }
+]
