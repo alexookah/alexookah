@@ -60,12 +60,18 @@
 
 
 
-.blueimp-gallery>.slides>.slide>.slide-content {
+.gallery-mobile-style>.slides>.slide>.slide-content {
   margin: 0
 }
 
-.blueimp-gallery-carousel {
-  padding-bottom:220%
+.gallery-mobile-style {
+  padding-bottom:220%;
+  margin:0;
+}
+
+.gallery-desktop-style {
+  padding-bottom: 56.25%;
+  /* width: 65vw; */
 }
 
 .marvel-device.iphone-x {
@@ -81,6 +87,18 @@
   overflow-y: unset;
 }
 
+.mh-service-item {
+  text-align: center;
+}
+
+.mh-portfolio-date {
+  margin-top:-15px;
+}
+
+.demoLinks {
+  padding: 0 10px 0 10px;
+  font-size: 18px;
+}
 
 
 .my-screen-nav-button {

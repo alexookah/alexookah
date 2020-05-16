@@ -463,26 +463,46 @@
       const currentProject = this.project
       // console.log(currentProject);
       ///////    portofolio icons
-      let html = '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' + this["categ"] + '">'
+      let html = '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' + this.categ + '">'
       html += '<figure>'
-      html += '<img src="projects/' + this["project"] + "/" + this["frontImage"] + '">'
+      html += '<img src="projects/' + this.project + "/" + this.frontImage + '">'
       html += '<figcaption class="fig-caption">'
-      html += '<i class="fas fa-search"></i>'
+
+      // icon
+      if (this.hasOwnProperty('protected')) {
+        html += '<i class="fas fa-lock"></i>'
+      } else {
+        html += '<i class="fas fa-search"></i>'
+      }
+
       html += '<h5 class="title">' + this.title + '</h5>'
-      html += '<span class="sub-title">' + this.subTitle + '</span>'
-      html += '<a data-fancybox data-src="#' + currentProject + '" id="gallery-' + currentProject + '" data-touch="false"></a>'
+      html += '<span class="sub-title">' + this.subTitle + "<br>" + this.releaseDate + '</span>'
+
+      // check for protected projects
+      if (!this.hasOwnProperty('protected')) {
+        html += '<a data-fancybox data-src="#' + currentProject + '" id="gallery-' + currentProject + '" data-touch="false"></a>'
+      }
+
       html += '</figcaption>'
       html += '</figure >'
       html += '</div >'
       // console.log(html)
       $(".portfolioContainer").append(html)
 
+      // if (this.hasOwnProperty('protected')) { continue }
       ///////    modal info
       let port = '<div class="mh-portfolio-modal" id="' + currentProject + '">'
       port += '<div class="container">'
       port += '<div class="row mh-portfolio-modal-inner">'
-      port += '<div class="col-sm-5">'
+
+      if (this.type == "desktop") {
+        port += '<div class="col-sm-12">'
+      } else {
+        port += '<div class="col-sm-5">'
+      }
+      
       port += '<h2>' + this.title + '</h2>'
+      port += '<p class="mh-portfolio-date">' + this.releaseDate + '</p>'
       port += this["description"]
       port += '<div class="mh-about-tag"> <ul>'
 
@@ -490,27 +510,23 @@
       $.each(this.keywords, function (k, keyword) {
         port += '<li><span>' + keyword + '</span></li>'
       });
-
-
-      port += '<li><span>html</span></li>'
-      port += '<li><span>css</span></li>'
       port += '</ul></div >'
 
       // Demo Links
       $.each(this.demoLinks, function (k, eachLink) {
         // console.log(k, link)
-        port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill">' + eachLink.name + '</a></p>'
+        port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill">'
+        port += '<i class="' + eachLink.icon + ' demoLinks"></i>'
+        port += eachLink.name
+        port += '</a></p>'
       });
 
-      // if (this.sourceType == "liveDemo") {
-        
 
-      // } else if (this.sourceType == "github") {
-        // port += '<a href="' + this["liveDemoLink"] + '" target="_blank" class="btn btn-fill">Github</a>'
-      // }
       port += '</div >'
-      if (this.type == "mobile" || this.type == "cover") {
+      if (this.type == "cover") {
         port += '<div class="col-sm-7 d-flex align-items-center">'
+      } else if (this.type == "desktop") {
+        port += '<div class="col-sm-12">'
       } else {
         port += '<div class="col-sm-7">'
       }
@@ -539,7 +555,7 @@
 
         port += '   <div class="screen" style="background-color: black;">'
         // <!-- Content goes here -->
-        port += '   <div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid" style="margin:0">'
+        port += '   <div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel gallery-mobile-style img-fluid">'
         port += '     <div class="slides"></div>'
         port += '     <h3 class="title"></h3>'
         port += '     <a class="prev">‹</a>'
@@ -551,7 +567,7 @@
         port += '</div>'
 
       } else if (this.type == "desktop") {
-        port += '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel img-fluid">'
+        port += '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel gallery-desktop-style">'
         port += '  <div class="slides"></div>'
         port += '  <h3 class="title"></h3>'
         port += '  <a class="prev">‹</a>'
@@ -560,8 +576,8 @@
         port += '  <a class="play-pause"></a>'
         port += '  <ol class="indicator"></ol>'
         port += '</div>'
-        
-        
+
+
       } else if (this.type == "cover") {
         port += '<img class="img-fluid" src="projects/' + this.project + "/" + this.images[0] + '">'
       }
