@@ -9,13 +9,13 @@
         "type": "mobile",
         "description": "<p>Sport FM is a Live Radio Stream Application with 15K unique users/month.</p><p>The user can read daily or past Newspapers. Schedule notifications to get notified when the events start, view team standings and WebTV videos</p>",
         "images": [
-            "0.jpg",
-            "1.jpg",
-            "2.jpg",
-            "3.jpg",
-            "4.jpg",
-            "5.jpg",
-            "6.jpg"
+            "0.png",
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png"
         ],
         "keywords": [
             "Swift",
@@ -45,15 +45,15 @@
         "type": "mobile",
         "description": "<p>MatchProgram is an application that shows information for Basketball Team 'PAO.</p><p>The user can view team standings, match statistics (teams and players), read news and articles, use the Calendar which shows all past and future matches.",
         "images": [
-            "1.jpg",
-            "2.jpg",
-            "3.jpg",
-            "4.jpg",
-            "5.jpg",
-            "6.jpg",
-            "7.jpg",
-            "8.jpg",
-            "9.jpg"
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png",
+            "9.png"
         ],
         "keywords": [
             "Swift",
