@@ -279,12 +279,12 @@
     {
         "project": "marsala",
         "frontImage": "front.png",
-        "title": "Marsala ",
+        "title": "Order Management System",
         "releaseDate": "2017",
-        "subTitle": "Order Management System",
+        "subTitle": "Marsala",
         "categ": "professional",
         "type": "desktop",
-        "description": "<p>A PHP, MySQL and Javascript project was created, to manage orders betweeen clients and suppliers. Suppliers and Clients can have multiple emails, phones, contact persons and banking details‎. Multiple Dynamic SQL filters was implemented to search specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p>",
+        "description": "<p>A PHP, MySQL and Javascript project was created, to manage orders betweeen clients and suppliers for marsala. Suppliers and Clients can have multiple emails, phones, contact persons and banking details‎. Multiple Dynamic SQL filters was implemented to search specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p>",
         "images": [
             "0.png",
             "1.png",
@@ -321,7 +321,7 @@
         "subTitle": "Deep Learning",
         "categ": "personalAndOther",
         "type": "cover",
-        "description": "<p>‎A Deep Neural network was used to classify the explicit content of a image, using the \"porn dataset\" from <a href='https://www.kaggle.com/ljlr34449/porn-data' target='_blank' style=''>kaggle</a> and a bikini dataset that i scrapped from google images.</p>",
+        "description": "<p>‎A Deep Neural network was used to classify the explicit content of a image, using the \"porn dataset\" from <a class='underlined-href' href='https://www.kaggle.com/ljlr34449/porn-data' target='_blank' style=''>kaggle</a> and a bikini dataset that i scrapped from google images.</p>",
         "images": [
             "cover.png"
         ],
