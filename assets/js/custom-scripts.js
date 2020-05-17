@@ -385,7 +385,7 @@
     $("a[href*=\\#]:not([href=\\#])").click(function () {
       if (
         location.pathname.replace(/^\//, "") ==
-          this.pathname.replace(/^\//, "") &&
+        this.pathname.replace(/^\//, "") &&
         location.hostname == this.hostname
       ) {
         var target = $(this.hash);
@@ -467,11 +467,6 @@
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
   }
 
-  // BlueImp Gallery
-  // blueimp.Gallery(document.getElementById('links').getElementsByTagName('a'), {
-  //   container: '#blueimp-gallery-carousel',
-  //   carousel: true
-  // })
 
   $.getJSON("projects/data.json", function (data) {
     // console.log(data)
@@ -481,13 +476,9 @@
       const currentProject = this.project;
       // console.log(currentProject);
       ///////    portofolio icons
-      let html =
-        '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' +
-        this.categ +
-        '">';
+      let html = '<div class="grid-item col-md-4 col-sm-6 col-xs-12 ' + this.categ + '">';
       html += "<figure>";
-      html +=
-        '<img src="projects/' + this.project + "/" + this.frontImage + '">';
+      html += '<img src="projects/' + this.project + "/" + this.frontImage + '">';
       html += '<figcaption class="fig-caption">';
 
       // icon
@@ -498,21 +489,11 @@
       }
 
       html += '<h5 class="title">' + this.title + "</h5>";
-      html +=
-        '<span class="sub-title">' +
-        this.subTitle +
-        "<br>" +
-        this.releaseDate +
-        "</span>";
+      html += '<span class="sub-title">' + this.subTitle + "<br>" + this.releaseDate + "</span>";
 
       // check for protected projects
       if (!this.hasOwnProperty("protected")) {
-        html +=
-          '<a data-fancybox data-src="#' +
-          currentProject +
-          '" id="gallery-' +
-          currentProject +
-          '" data-touch="false"></a>';
+        html += '<a data-fancybox data-src="#' + currentProject + '" id="gallery-' + currentProject + '" data-touch="false"></a>';
       }
 
       html += "</figcaption>";
@@ -534,12 +515,7 @@
       }
 
       port += "<h2>" + this.title + "</h2>";
-      port +=
-        '<p class="mh-portfolio-date">' +
-        this.subTitle +
-        " - " +
-        this.releaseDate +
-        "</p>";
+      port += '<p class="mh-portfolio-date">' + this.subTitle + " - " + this.releaseDate + "</p>";
       port += this["description"];
       port += '<div class="mh-about-tag"> <ul>';
 
@@ -552,10 +528,7 @@
       // Demo Links
       $.each(this.demoLinks, function (k, eachLink) {
         // console.log(k, link)
-        port +=
-          '<p><a href="' +
-          eachLink.link +
-          '" target="_blank" class="btn btn-fill">';
+        port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill">';
         port += '<i class="' + eachLink.icon + ' demoLinks"></i>';
         port += eachLink.name;
         port += "</a></p>";
@@ -594,10 +567,7 @@
 
         port += '   <div class="screen" style="background-color: black;">';
         // <!-- Content goes here -->
-        port +=
-          '   <div id="blueimp-gallery-carousel-' +
-          currentProject +
-          '" class="blueimp-gallery blueimp-gallery-carousel gallery-mobile-style img-fluid">';
+        port += '   <div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel gallery-mobile-style img-fluid">';
         port += '     <div class="slides"></div>';
         port += '     <h3 class="title"></h3>';
         port += '     <a class="prev">‹</a>';
@@ -609,9 +579,7 @@
         port += "</div>";
       } else if (this.type == "desktop") {
         port +=
-          '<div id="blueimp-gallery-carousel-' +
-          currentProject +
-          '" class="blueimp-gallery blueimp-gallery-carousel gallery-desktop-style">';
+          '<div id="blueimp-gallery-carousel-' + currentProject + '" class="blueimp-gallery blueimp-gallery-carousel gallery-desktop-style">';
         port += '  <div class="slides"></div>';
         port += '  <h3 class="title"></h3>';
         port += '  <a class="prev">‹</a>';
@@ -622,11 +590,7 @@
         port += "</div>";
       } else if (this.type == "cover") {
         port +=
-          '<img class="img-fluid" src="projects/' +
-          this.project +
-          "/" +
-          this.images[0] +
-          '">';
+          '<img class="img-fluid" src="projects/' + this.project + "/" + this.images[0] + '">';
       }
 
       port += "</div>";
@@ -637,11 +601,8 @@
       port += "</div>";
       port += "</div>";
 
+      $(".mh-portfolio").append(port);
 
-
-
-      $(".mh-portfolio").append(port)
-      
       // portfolio images in slider
       if (this.type != "cover") {
         var carouselLinks = [];
@@ -658,10 +619,9 @@
               container: "#blueimp-gallery-carousel-" + currentProject,
               carousel: true,
             });
-          }, 50);
+          }, 100);
         });
       }
-
     });
   });
 })(jQuery);
