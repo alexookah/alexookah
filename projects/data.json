@@ -246,7 +246,7 @@
         "categ": "professional",
         "type": "mobile",
         "sourceType": "liveDemo",
-        "description": "<p>The use of this application allows the members of the Cultural Dance Club \"Dionysos\" to get notified for future events while it also gives the possibility to confirm their participation.</p>",
+        "description": "<p>The use of this application allows the members of the Cultural Dance Club \"Dionysos\" to get notified for future events while it also gives the possibility to confirm their participation. Every class has its own group to manage users and post announcements.</p>",
         "images": [
             "0.png",
             "1.png",
@@ -284,7 +284,7 @@
         "subTitle": "Marsala",
         "categ": "professional",
         "type": "desktop",
-        "description": "<p>A PHP, MySQL and Javascript project was created, to manage orders betweeen clients and suppliers for marsala. Suppliers and Clients can have multiple emails, phones, contact persons and banking details‎. Multiple Dynamic SQL filters was implemented to search specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p>",
+        "description": "<p>A PHP, MySQL and Javascript project was created, to manage orders betweeen clients and suppliers for marsala. Suppliers and clients can have multiple emails, phones, contact persons and banking details‎. Multiple dynamic SQL filters was implemented to search specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel sheets can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p> <p>User access level has been implemented to manage users. Authorised users are restricted to login only from office with a dynamic ip address.</p>",
         "images": [
             "0.png",
             "1.png",
