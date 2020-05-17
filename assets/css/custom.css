@@ -100,6 +100,16 @@
   font-size: 18px;
 }
 
+.demoButtons {
+  min-width: 190px;
+  max-width: 190px;
+}
+
+.demoButtonsLarge {
+  min-width: 230px;
+  max-width: 230px;
+}
+
 .underlined-href {
   text-decoration: underline!important;
 }
@@ -146,7 +156,3 @@ body.fancybox-active{
   /* position: fixed; */
 }
 
-.demoButtons {
-  min-width: 80px;
-  max-width: 80px;
-}

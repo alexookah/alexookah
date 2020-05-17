@@ -528,7 +528,12 @@
       // Demo Links
       $.each(this.demoLinks, function (k, eachLink) {
         // console.log(k, link)
-        port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill">';
+        if (currentProject == "smart-delivery") {
+          port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill demoButtonsLarge">';
+        } else {
+          port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill demoButtons">';
+        }
+        
         port += '<i class="' + eachLink.icon + ' demoLinks"></i>';
         port += eachLink.name;
         port += "</a></p>";
