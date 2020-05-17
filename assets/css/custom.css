@@ -140,3 +140,7 @@
   left: auto;
   right: 20px;
 }
+
+body.fancybox-is-open{
+  overflow: hidden;
+}
