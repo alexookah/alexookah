@@ -83,9 +83,9 @@
 }
 
 .mh-portfolio-modal-inner {
-  max-height: 800px;
+  max-height: 80vh;
   overflow-y: unset;
-}
+} 
 
 .mh-service-item {
   text-align: center;
@@ -143,4 +143,9 @@
 
 body.fancybox-active{
   overflow: hidden;
+  /* position: fixed; */
 }
+
+/* .fancybox-overlay {
+  overflow: hidden !important;
+  } */

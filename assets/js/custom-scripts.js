@@ -500,9 +500,9 @@
       } else {
         port += '<div class="col-sm-5">'
       }
-      
+
       port += '<h2>' + this.title + '</h2>'
-      port += '<p class="mh-portfolio-date">' + this.releaseDate + '</p>'
+      port += '<p class="mh-portfolio-date">' + this.subTitle + " - " + this.releaseDate + '</p>'
       port += this["description"]
       port += '<div class="mh-about-tag"> <ul>'
 
@@ -605,7 +605,7 @@
             container: '#blueimp-gallery-carousel-' + currentProject,
             carousel: true,
           })
-        }, 200)
+        }, 50)
       });
 
 
