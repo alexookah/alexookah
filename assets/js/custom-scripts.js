@@ -609,7 +609,7 @@
         $.each(this.images, function (k, image) {
           carouselLinks.push({
             href: "projects/" + currentProject + "/" + image,
-            thumbnail: "projects/" + currentProject + "/" + image,
+            // thumbnail: "projects/" + currentProject + "/" + image,
           });
         });
 
@@ -618,6 +618,7 @@
             blueimp.Gallery(carouselLinks, {
               container: "#blueimp-gallery-carousel-" + currentProject,
               carousel: true,
+              thumbnailIndicators: false
             });
           }, 100);
         });
