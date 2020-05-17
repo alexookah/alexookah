@@ -598,12 +598,12 @@
         carouselLinks.push('projects/' + currentProject + "/" + image)
       })
 
-
+      
       $("#gallery-" + currentProject).click(function () {
         setTimeout(function () {
           blueimp.Gallery(carouselLinks, {
             container: '#blueimp-gallery-carousel-' + currentProject,
-            carousel: true,
+            carousel: true
           })
         }, 50)
       });
@@ -617,7 +617,7 @@
       // $('#fullscreen-gallery-pao-bc').click(function () {
       //   console.log('jclick ere')
       //   if ($('#blueimp-gallery-carousel-' + currentProject).hasClass('blueimp-gallery-carousel-' + currentProject)) {
-      //     $('#blueimp-gallery-carousel-' + currentProject).removeClass('blueimp-gallery-carousel-' + currentProject);
+      //     $('#blueimp-gallery-carousel-' + currentProject).remsoveClass('blueimp-gallery-carousel-' + currentProject);
       //     console.log('jere')
       //   }
       //   else {
