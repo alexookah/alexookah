@@ -138,5 +138,6 @@ window.addEventListener('load', () => {
 function onChangeHandleThemeStyling(isDarkTheme) {
     document.getElementById('darkSwitch').checked = isDarkTheme
 
-    document.getElementById('myLogo').src = "assets/images/" + (isDarkTheme ? "me_animated_white.svg" : "me_animated.svg")
+    document.getElementById('myLogo').data = "assets/images/" + (isDarkTheme ? "me_animated_white.svg" : "me_animated.svg")
+    document.getElementById('myLogoFallback').src = "assets/images/" + (isDarkTheme ? "me_animated_white.svg" : "me_animated.svg")
 }
