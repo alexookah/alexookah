@@ -141,6 +141,6 @@
   right: 20px;
 }
 
-body.fancybox-is-open{
+body.fancybox-active{
   overflow: hidden;
 }
