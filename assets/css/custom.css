@@ -70,8 +70,8 @@
 }
 
 .gallery-desktop-style {
-  padding-bottom: 56.25%;
-  /* width: 65vw; */
+  /* padding-bottom: 56.25%; */
+  padding-bottom: 65%
 }
 
 .marvel-device.iphone-x {
@@ -83,7 +83,7 @@
 }
 
 .mh-portfolio-modal-inner {
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: unset;
 } 
 
@@ -146,6 +146,7 @@ body.fancybox-active{
   /* position: fixed; */
 }
 
-/* .fancybox-overlay {
-  overflow: hidden !important;
-  } */
+.demoButtons {
+  min-width: 80px;
+  max-width: 80px;
+}
