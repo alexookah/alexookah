@@ -500,7 +500,13 @@
       html += "</figure >";
       html += "</div >";
       // console.log(html)
+
       $(".portfolioContainer").append(html);
+      if ($('.portfolioContainer').css('height') == '0px') {
+        $('.portfolioContainer').css('height','auto')
+      }
+
+      
      
 
       // if (this.hasOwnProperty('protected')) { continue }
