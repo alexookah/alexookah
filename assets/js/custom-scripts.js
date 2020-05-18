@@ -92,6 +92,19 @@
         .addClass("fadeInRight animated")
         .css("opacity", "1");
     });
+    // add font awesome rather than % in professional skils
+    var fontAwesomeIcons = [
+      'fas fa-pen-alt',
+      'fas fa-thermometer-quarter',
+      'fas fa-users',
+      'fas fa-hammer'
+    ]
+    $(".mh-progress-circle").each(function( index, element){
+      console.log(this);
+      $(this).find('.progressbar-text').hide()
+      $(this).append('<p class="circleFontAwesome"><i class="' + fontAwesomeIcons[index] + '"></i></p>')
+    });
+
   });
 
   /*
