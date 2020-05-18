@@ -242,7 +242,7 @@
         "frontImage": "front.png",
         "title": "Dancers Dionysos",
         "releaseDate": "2019",
-        "subTitle": "Event Manager Application",
+        "subTitle": "Group Events Management",
         "categ": "professional",
         "type": "mobile",
         "sourceType": "liveDemo",
@@ -259,7 +259,9 @@
             "Capacitor",
             "Ionic",
             "Firebase",
+            "Firebase RealTime Database",
             "Remote push notifications",
+            "FCM",
             "SMS notifications"
         ],
         "demoLinks": [{
@@ -281,10 +283,10 @@
         "frontImage": "front.png",
         "title": "Order Management System",
         "releaseDate": "2017",
-        "subTitle": "Marsala",
+        "subTitle": "Marsala-Textiles",
         "categ": "professional",
         "type": "desktop",
-        "description": "<p>A PHP, MySQL and Javascript project was created, to manage orders betweeen clients and suppliers for marsala. Suppliers and clients can have multiple emails, phones, contact persons and banking details‎. Multiple dynamic SQL filters was implemented to search specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel sheets can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p> <p>User access level has been implemented to manage users. Authorised users are restricted to login only from office with a dynamic ip address.</p>",
+        "description": "<p>A PHP, MySQL and JavaScript project was created, to manage orders betweeen clients and suppliers for Marsala-Textiles. Suppliers and clients can have multiple emails, phones, contact persons and banking details‎. Multiple dynamic SQL filtering was implemented to find specific orders (status, date, created by specific user, order number, e.t.c.). Custom PDF and Excel sheets can be exported from search results. Orders can have multiple statuses to efficiently track every order.</p> <p>User access level has been implemented to manage users. Authorised users are restricted to login only from the office with a dynamic ip address.</p>",
         "images": [
             "0.png",
             "1.png",
@@ -305,11 +307,11 @@
         "keywords": [
             "PHP",
             "MySQL",
-            "Javascript",
+            "JavaScript",
             "Ajax",
             "jQuery",
             "user access level",
-            "orders management system"
+            "OMS"
         ],
         "demoLinks": []
     },
