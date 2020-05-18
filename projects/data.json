@@ -7,7 +7,7 @@
         "subTitle": "Sport News App",
         "categ": "professional",
         "type": "mobile",
-        "description": "<p>Sport FM is a Live Radio Stream Application with 15K unique users/month.</p><p>The user can read daily or past Newspapers. Schedule notifications to get notified when the events start, view team standings and WebTV videos</p>",
+        "description": "<p>Sport FM is a Live Radio Stream Application with 15K unique users/month.</p><p>The user can read daily or past Newspapers. Schedule notifications to get notified when the events start, view team standings and WebTV videos.</p>",
         "images": [
             "0.png",
             "1.png",
@@ -20,14 +20,15 @@
         "keywords": [
             "Swift",
             "Restful API",
-            "local & remote push notifications",
+            "Local & Remote push notifications",
+            "OneSignal",
             "live radio stream",
-            "webTV videos",
+            "ebTV videos",
             "live events",
             "newspapers",
             "caching",
             "offline-mode",
-            "adMob"
+            "AdMob"
         ],
         "demoLinks": [{
             "link": "https://apps.apple.com/gr/app/sport-fm-946/id591053245?l=en",
@@ -40,10 +41,10 @@
         "frontImage": "front.png",
         "title": "Pao BC",
         "releaseDate": "2016",
-        "subTitle": "MatchProgram Informational Application",
+        "subTitle": "Match program Application",
         "categ": "professional",
         "type": "mobile",
-        "description": "<p>MatchProgram is an application that shows information for Basketball Team 'PAO.</p><p>The user can view team standings, match statistics (teams and players), read news and articles, use the Calendar which shows all past and future matches.",
+        "description": "<p>Pao BC app is an application that shows information for Basketball Team \"PAO\".</p><p>The user can view team standings, match statistics (teams and players), read news and articles, use the Calendar, which shows all past and future matches.",
         "images": [
             "1.png",
             "2.png",
@@ -57,9 +58,10 @@
         ],
         "keywords": [
             "Swift",
-            "Restful API",
+            "RESTful API",
             "caching",
-            "remote push notifications",
+            "Remote push notifications",
+            "OneSignal",
             "calendar"
         ],
         "demoLinks": [{
@@ -76,7 +78,7 @@
         "subTitle": "Medical Application",
         "categ": "professional",
         "type": "mobile",
-        "description": "<p>A Medical Application for pet owners.</p> <p>The application is build on a restful Drupal Server, that allows users to view website's blog posts, register & authenticate, add notes & reminders, upload pet's photos and get notified when they should visit their vet owner.</p>",
+        "description": "<p>A Medical Application for pet owners.</p> <p>The application is build on a restful Drupal Server, that allows users to view website's blog posts, register & authenticate, add notes & reminders, upload pet's photos and get notified when they should visit their vet.</p>",
         "images": [
             "1.png",
             "2.png",
@@ -90,8 +92,9 @@
         ],
         "keywords": [
             "Swift",
-            "Drupal restful API",
-            "Remote push notifications"
+            "Drupal RESTful API",
+            "Remote push notifications",
+            "FCM"
         ],
         "demoLinks": [{
             "link": "https://apps.apple.com/us/app/the-petbook/id1425395359?l=en",
@@ -108,7 +111,7 @@
         "subTitle": "Delivery Application",
         "categ": "professional",
         "type": "mobile",
-        "description": "<p>A delivery application for Cava Brouzos (B2B and B2C).</p> <p>The user can order products that are dynamically created from the backend (firebase), see previous orders and have multiple addresses.</p> <p>B2B customers login with email while B2C users login with phone number. The menu is structured in categories, subcategories and products.</p> <p>The Backend provides different menu's and products with different prices and discounts for dirrent types of B2B users. The design for every screen is generated from the backend.</p>",
+        "description": "<p>A delivery application for Cava Brouzos (B2B and B2C).</p> <p>The user can order products that are dynamically created from the backend (Firebase), see previous orders and have multiple addresses.</p> <p>B2B customers login with email while B2C users login with phone number. The menu is structured in categories, subcategories and products.</p> <p>The Backend provides different menus and products with different prices and discounts for diferrent types of B2B users. The design for every screen is generated from the backend.</p>",
         "images": [
             "1.png",
             "2.png",
@@ -136,6 +139,7 @@
         "keywords": [
             "Swift",
             "Firebase",
+            "Firebase Realtime Database",
             "multi-language",
             "offline mode"
         ],
@@ -171,7 +175,7 @@
             "multi-language",
             "YouTube native video player",
             "subtitles",
-            "in-app purchases",
+            "In-app purchases",
             "dark-mode"
         ],
         "demoLinks": [{
@@ -188,7 +192,7 @@
         "subTitle": "Food Delivery Application",
         "categ": "professional",
         "type": "mobile",
-        "description": "<p>Smart Delivery is an application, order items from a menu based of a user's address, delivery or take away and checkout with a credit card.</p>",
+        "description": "<p>Smart Delivery is an application that allows users to order items from a menu. Features delivery to the user's address or take away and checkout with a credit card.</p>",
         "images": [
             "0.png",
             "1.png",
@@ -219,9 +223,11 @@
             "multiple project targets for each store",
             "multiple addresses",
             "multi-language",
-            "remote push notifications",
+            "Remote push notifications",
+            "OneSignal",
             "take-away",
-            "credit card payment"
+            "credit card payment",
+            "Viva"
         ],
         "demoLinks": [{
             "link": "https://smartupweb.com/en/smart-delivery/",
@@ -259,7 +265,7 @@
             "Capacitor",
             "Ionic",
             "Firebase",
-            "Firebase RealTime Database",
+            "Firebase Realtime Database",
             "Remote push notifications",
             "FCM",
             "SMS notifications"
@@ -323,7 +329,7 @@
         "subTitle": "Deep Learning",
         "categ": "personalAndOther",
         "type": "cover",
-        "description": "<p>‎A Deep Neural network was used to classify the explicit content of a image, using the \"porn dataset\" from <a class='underlined-href' href='https://www.kaggle.com/ljlr34449/porn-data' target='_blank' style=''>kaggle</a> and a bikini dataset that i scrapped from google images.</p>",
+        "description": "<p>‎A Deep Neural network was used to classify the explicit content of a image, using the \"porn dataset\" from <a class='underlined-href' href='https://www.kaggle.com/ljlr34449/porn-data' target='_blank' style=''>kaggle</a> and a bikini dataset that I scrapped from Google images.</p>",
         "images": [
             "cover.png"
         ],
@@ -344,7 +350,7 @@
         "title": "Vodafone iOS Application",
         "releaseDate": "",
         "protected": true,
-        "subTitle": "Password Protected",
+        "subTitle": "Classified",
         "categ": "professional",
         "type": "mobile",
         "description": "",
