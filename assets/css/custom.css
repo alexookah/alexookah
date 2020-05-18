@@ -166,6 +166,10 @@ body.fancybox-active {
   font-size: 22px;
 }
 
+.social-icon li .fab {
+  font-size: 20px
+}
+
 /* .portfolioContainer {
   height: inherit!important
 } */
