@@ -500,7 +500,12 @@
       html += "</figure >";
       html += "</div >";
       // console.log(html)
-      $(".portfolioContainer").append(html);
+
+      setTimeout(function () {
+        $(".portfolioContainer").append(html);
+      }, 2000);
+
+     
 
       // if (this.hasOwnProperty('protected')) { continue }
       ///////    modal info
