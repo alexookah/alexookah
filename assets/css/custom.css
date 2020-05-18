@@ -156,3 +156,6 @@ body.fancybox-active{
   /* position: fixed; */
 }
 
+.portfolioContainer {
+  height: inherit!important
+}
