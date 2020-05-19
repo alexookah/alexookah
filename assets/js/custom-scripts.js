@@ -92,6 +92,7 @@
         .addClass("fadeInRight animated")
         .css("opacity", "1");
     });
+
     // add font awesome rather than % in professional skils
     var fontAwesomeIcons = [
       'fas fa-pen-alt',
@@ -99,12 +100,56 @@
       'fas fa-users',
       'fas fa-hammer'
     ]
-    $(".mh-progress-circle").each(function( index, element){
-      console.log(this);
+    $(".mh-progress-circle").each(function (index, element) {
       $(this).find('.progressbar-text').hide()
       $(this).append('<p class="circleFontAwesome"><i class="' + fontAwesomeIcons[index] + '"></i></p>')
     });
 
+
+    /*
+    |=================
+    | fancybox
+    |================
+    */
+
+    $("[data-fancybox]").fancybox({
+      // afterLoad: function (fb, item) {
+      //   console.log("asdasd")
+      // },
+      // hideScrollbar: true,
+      beforeShow: function (instance, slide) {
+        console.log("beforeShow")
+        $('#mh-header .container').css("margin-right", "17px")
+
+      },
+      afterShow: function (instance, slide) {
+        console.log("afterShow")
+        // Tip: Each event passes useful information within the event object:
+
+        // document.body.style.position = 'fixed';
+        // document.body.top = `-${window.scrollY}px`;
+
+        // // Object containing references to interface elements
+        // // (background, buttons, caption, etc)
+        // console.info(instance.$refs);
+
+        // // Current slide options
+        // console.info(slide.opts);
+
+        // // Clicked element
+        // console.info(slide.opts.$orig);
+
+        // // Reference to DOM element of the slide
+        // console.info(slide.$slide);
+      },
+      afterClose: function (instance, slide) {
+        // console.log("clsoed")
+        // const scrollY = document.body.style.top;
+        // document.body.style.position = '';
+        // document.body.style.top = '';
+        // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      }
+    });
   });
 
   /*
@@ -139,13 +184,7 @@
     scrollThreshold: 0.5,
   });
 
-  /*
-  |=================
-  | fancybox
-  |================
-  */
 
-  $("[data-fancybox]").fancybox({});
 
   /*
   |===============
@@ -516,11 +555,8 @@
 
       $(".portfolioContainer").append(html);
       if ($('.portfolioContainer').css('height') == '0px') {
-        $('.portfolioContainer').css('height','auto')
+        $('.portfolioContainer').css('height', 'auto')
       }
-
-      
-     
 
       // if (this.hasOwnProperty('protected')) { continue }
       ///////    modal info
@@ -553,7 +589,7 @@
         } else {
           port += '<p><a href="' + eachLink.link + '" target="_blank" class="btn btn-fill demoButtons">';
         }
-        
+
         port += '<i class="' + eachLink.icon + ' demoLinks"></i>';
         port += eachLink.name;
         port += "</a></p>";
@@ -565,7 +601,7 @@
       } else if (this.type == "desktop") {
         port += '<div class="col-sm-12">';
       } else {
-        port += '<div class="col-sm-7">';
+        port += '<div class="col-sm-7" style="15px 0 15px 0">';
       }
       port += '<div class="mh-portfolio-modal-img" style="text-align:center">';
 

@@ -151,10 +151,10 @@
   right: 20px;
 }
 
-body.fancybox-active {
-  overflow: hidden;
+/* body.fancybox-active { */
+  /* overflow: hidden; */
   /* position: fixed; */
-}
+/* } */
 
 .circleFontAwesome {
   position: absolute; 
@@ -169,7 +169,3 @@ body.fancybox-active {
 .social-icon li .fab {
   font-size: 20px
 }
-
-/* .portfolioContainer {
-  height: inherit!important
-} */
