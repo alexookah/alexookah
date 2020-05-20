@@ -119,35 +119,18 @@
       // hideScrollbar: true,
       beforeShow: function (instance, slide) {
         console.log("beforeShow")
-        $('#mh-header .container').css("margin-right", "17px")
+        // $('#mh-header .container').css("padding-right", "32px")
 
       },
       afterShow: function (instance, slide) {
         console.log("afterShow")
-        // Tip: Each event passes useful information within the event object:
-
-        // document.body.style.position = 'fixed';
-        // document.body.top = `-${window.scrollY}px`;
-
-        // // Object containing references to interface elements
-        // // (background, buttons, caption, etc)
-        // console.info(instance.$refs);
-
-        // // Current slide options
-        // console.info(slide.opts);
-
-        // // Clicked element
-        // console.info(slide.opts.$orig);
-
-        // // Reference to DOM element of the slide
-        // console.info(slide.$slide);
+      },
+      beforeClose: function (instance, slide) {
+        console.log("beforeClose")
       },
       afterClose: function (instance, slide) {
-        // console.log("clsoed")
-        // const scrollY = document.body.style.top;
-        // document.body.style.position = '';
-        // document.body.style.top = '';
-        // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        // $('#mh-header .container').css("padding-right", "auto")
+
       }
     });
   });
@@ -679,7 +662,8 @@
             blueimp.Gallery(carouselLinks, {
               container: "#blueimp-gallery-carousel-" + currentProject,
               carousel: true,
-              thumbnailIndicators: false
+              thumbnailIndicators: false,
+              stretchImages: true
             });
           }, 100);
         });
