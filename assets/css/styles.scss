@@ -579,10 +579,10 @@
 }
 .mh-header {
     padding: 10px 0;
-    @include transition(.3s);
+    // @include transition(.3s);
     &.nav-strict {
         padding: 10px 0;
-        @include transition(.3s);
+        // @include transition(.3s);
     }
     .navbar-nav {
         li {
