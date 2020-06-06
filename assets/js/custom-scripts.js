@@ -44,6 +44,15 @@
         $(this).attr("href", href);
       });
     });
+
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'assets/sounds/Ba Dum Tss!.mp3');
+    $(".fa-drum").click(function () {
+      audioElement.currentTime = 0;
+      audioElement.play();
+    });
+    
+
   });
   /* Loader Code End */
 
