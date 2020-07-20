@@ -348,16 +348,28 @@
         "project": "vodafone",
         "frontImage": "front.png",
         "title": "Vodafone iOS Application",
-        "releaseDate": "",
-        "protected": true,
-        "subTitle": "Password protected",
+        "releaseDate": "2020",
+        "subTitle": "Vodafone Business Maps",
         "categ": "professional",
         "type": "mobile",
-        "description": "",
-        "images": [],
-        "keywords": [
-            "Swift"
+        "description": "Vodafone Business Maps is a B2B application.",
+        "images": [
+            "0.png",
+            "1.png",
+            "2.png",
+            "3.png"
         ],
-        "demoLinks": []
+        "keywords": [
+            "Swift",
+            "Firebase",
+            "Firebase FireStore",
+            "Remote push notifications",
+            "Google Maps"
+        ],
+        "demoLinks": [{
+            "link": "https://apps.apple.com/gr/app/vodafone-business-maps/id1518226368",
+            "name": "App Store",
+            "icon": "fab fa-apple"
+        }]
     }
 ]
