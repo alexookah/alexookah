@@ -345,5 +345,21 @@
             "name": "Github",
             "icon": "fab fa-github"
         }]
+    },
+    {
+        "project": "vodafone",
+        "frontImage": "front.png",
+        "title": "Vodafone iOS Application",
+        "releaseDate": "",
+        "protected": true,
+        "subTitle": "Password protected",
+        "categ": "professional",
+        "type": "mobile",
+        "description": "",
+        "images": [],
+        "keywords": [
+            "Swift"
+        ],
+        "demoLinks": []
     }
 ]
