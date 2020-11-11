@@ -248,11 +248,11 @@
         "frontImage": "front.png",
         "title": "Dancers Dionysos",
         "releaseDate": "2019",
-        "subTitle": "Group Events Management",
+        "subTitle": "CRM Application",
         "categ": "professional",
         "type": "mobile",
         "sourceType": "liveDemo",
-        "description": "<p>The use of this application allows the members of the Cultural Dance Club \"Dionysos\" to get notified for future events while it also gives the possibility to confirm their participation. Every class has its own group to manage users and post announcements.</p>",
+        "description": "<p>The use of this application allows the members of the Cultural Dance Club \"Dionysos\" to get notified for future events while it also gives the possibility to confirm their participation. Every class has its own group to manage users and post announcements. Users have subscriptions and can check-in to classes using qr codes. </p>",
         "images": [
             "0.png",
             "1.png",
@@ -261,11 +261,13 @@
             "4.png"
         ],
         "keywords": [
-            "Angular 8",
-            "Capacitor",
+            "Angular 10",
             "Ionic",
+            "Capacitor",
+            "Bitrise",
             "Firebase",
-            "Firebase Realtime Database",
+            "Firebase FireStore",
+            "Rxjs",
             "Remote push notifications",
             "FCM",
             "SMS notifications"
