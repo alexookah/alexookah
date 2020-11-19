@@ -10,7 +10,7 @@
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=alexookah&show_icons=true&hide_border=true&count_private=true)
 
 
-<p><a href="https://alexlykesas.com" target="_blank">🌐 Check out my portfolio website</a></p>
+<p><a href="https://alexlykesas.com">🌐 Check out my portfolio website</a></p>
 
 
 [linkedin]: https://linkedin.com/in/alexlykesas
