@@ -121,27 +121,7 @@
     |================
     */
 
-    $("[data-fancybox]").fancybox({
-      // afterLoad: function (fb, item) {
-      //   console.log("asdasd")
-      // },
-      // hideScrollbar: true,
-      beforeShow: function (instance, slide) {
-        console.log("beforeShow")
-        // $('#mh-header .container').css("padding-right", "32px")
-
-      },
-      afterShow: function (instance, slide) {
-        console.log("afterShow")
-      },
-      beforeClose: function (instance, slide) {
-        console.log("beforeClose")
-      },
-      afterClose: function (instance, slide) {
-        // $('#mh-header .container').css("padding-right", "auto")
-
-      }
-    });
+    $("[data-fancybox]").fancybox();
   });
 
   /*
@@ -543,14 +523,12 @@
       html += "</figcaption>";
       html += "</figure >";
       html += "</div >";
-      // console.log(html)
 
       $(".portfolioContainer").append(html);
       if ($('.portfolioContainer').css('height') == '0px') {
         $('.portfolioContainer').css('height', 'auto')
       }
 
-      // if (this.hasOwnProperty('protected')) { continue }
       ///////    modal info
       let port = '<div class="mh-portfolio-modal" id="' + currentProject + '">';
       port += '<div class="container">';
@@ -672,7 +650,8 @@
               container: "#blueimp-gallery-carousel-" + currentProject,
               carousel: true,
               thumbnailIndicators: false,
-              stretchImages: true
+              stretchImages: true,
+              slideshowInterval: 2000,
             });
           }, 100);
         });
