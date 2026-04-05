@@ -1,747 +1,313 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Alex Lykesas</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="My Personal cv/resume website">
-    <meta name="keywords"
-        content="ios, python, cv, developer,  online cv, online resume, portfolio, responsive, resume, vcard, alex, alexandros, lykesas">
-    <meta name="developer" content="Alexandros Lykesas">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under (re)construction</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e2e1dd;
+      font-family: 'DM Sans', sans-serif;
+      padding: 2rem;
+    }
 
-    <!-- Social Tags -->
-    <meta property="og:title" content="Alexandros Lykesas Portfolio Website">
-    <meta property="og:description" content="iOS Developer - Machine Learning">
-    <meta property="og:image" content="https://alexlykesas.com/assets/images/og_image.png">
-    <meta property="og:url" content="https://alexlykesas.com">
-    <meta name="twitter:card" content="summary_large_image">
+    .card {
+      background-color: #e2e1dd;
+      /* border: 4px solid #e2af85; */
+      border-radius: 4px;
+      max-width: 90%;
+      height: 90dvh;
+      width: 100%;
+      padding: 4rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.8s ease-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
 
-    <!--  Non-Essential, But Recommended -->
-    <meta property="og:site_name" content="Alexandros Lykesas Portfolio Website, iOS Developer - Machine Learning">
-    <!-- <meta name="twitter:image:alt" content="Alt text for image"> -->
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-    <!-- FAV AND ICONS   -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    .subtitle {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 0.5rem;
+      animation: fadeIn 1s ease-out 0.3s both;
+    }
 
-    <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="assets/icons/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      color: #1a1a1a;
+      margin-bottom: 1.2rem;
+      animation: fadeIn 1s ease-out 0.5s both;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/animate.css">
-    <!-- Owl Carousel CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/owl.css">
-    <!-- Fancybox-->
-    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
-    <!-- AOS-->
-    <link rel="stylesheet" href="assets/plugins/css/aos.css">
+    .description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      animation: fadeIn 1s ease-out 0.7s both;
+    }
 
-    <!-- BlueImp Gallery -->
-    <link rel="stylesheet" href="assets/plugins/blueimp/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="assets/plugins/blueimp/css/blueimp-gallery-indicator.css">
+    .description strong {
+      color: #1a1a1a;
+    }
 
-    <!-- Device CSS -->
-    <link rel="stylesheet" href="assets/plugins/css/devices.css" type="text/css">
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
 
+      to {
+        opacity: 1;
+      }
+    }
 
+    .btn_container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
 
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #e2af85;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      cursor: pointer;
+        transition: all 0.3s ease;
+      animation: fadeIn 1s ease-out 0.9s both;
+      width: fit-content;
+       box-shadow: 5px 10px rgba(0, 0, 0, 0);
+       border-radius: 10px;
+       /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+    }
 
-    <!-- Colors -->
-    <link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue">
-    <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld">
-    <link rel="alternate stylesheet" href="assets/css/colors/green.css" title="green">
-    <link rel="alternate stylesheet" href="assets/css/colors/blue-munsell.css" title="blue-munsell">
-    <link rel="alternate stylesheet" href="assets/css/colors/orange.css" title="orange">
-    <link rel="alternate stylesheet" href="assets/css/colors/purple.css" title="purple">
-    <link rel="alternate stylesheet" href="assets/css/colors/slate.css" title="slate">
-    <link rel="alternate stylesheet" href="assets/css/colors/yellow.css" title="yellow">
+    .btn:hover {
+      /* background-color: #1a1a1a; */
+       box-shadow: 5px 10px #1a1a1a;
+      transform: translateY(-2px);
+    }
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112537925-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-112537925-2');
-    </script>
+    .btn svg {
+      transition: transform 0.3s ease;
+    }
 
+    .btn:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* Doodle decorations */
+    .doodles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .doodle {
+      position: absolute;
+      color: #e2af85;
+      opacity: 0;
+      animation: doodlePop 0.5s ease-out forwards;
+    }
+
+    .doodle-1 {
+      top: 18%;
+      left: 12%;
+      font-size: 2rem;
+      animation-delay: 1.2s;
+      animation-name: doodlePop, doodleFloat;
+      animation-duration: 0.5s, 3s;
+      animation-delay: 1.2s, 1.7s;
+      animation-fill-mode: forwards, none;
+      animation-iteration-count: 1, infinite;
+      animation-timing-function: ease-out, ease-in-out;
+    }
+
+    .doodle-2 {
+      top: 12%;
+      right: 14%;
+      font-size: 1.5rem;
+      animation-delay: 1.5s;
+      animation-name: doodlePop, doodleFloat;
+      animation-duration: 0.5s, 4s;
+      animation-delay: 1.5s, 2s;
+      animation-fill-mode: forwards, none;
+      animation-iteration-count: 1, infinite;
+      animation-timing-function: ease-out, ease-in-out;
+    }
+
+    .doodle-3 {
+      bottom: 20%;
+      right: 10%;
+      font-size: 1.8rem;
+      animation-delay: 1.8s;
+      animation-name: doodlePop, doodleFloat;
+      animation-duration: 0.5s, 3.5s;
+      animation-delay: 1.8s, 2.3s;
+      animation-fill-mode: forwards, none;
+      animation-iteration-count: 1, infinite;
+      animation-timing-function: ease-out, ease-in-out;
+    }
+
+    .doodle-4 {
+      bottom: 18%;
+      left: 10%;
+      font-size: 1.6rem;
+      animation-delay: 2s;
+      animation-name: doodlePop, doodleFloat;
+      animation-duration: 0.5s, 4.5s;
+      animation-delay: 2s, 2.5s;
+      animation-fill-mode: forwards, none;
+      animation-iteration-count: 1, infinite;
+      animation-timing-function: ease-out, ease-in-out;
+    }
+
+    .doodle-5 {
+      top: 35%;
+      right: 8%;
+      font-size: 1.2rem;
+      animation-delay: 2.2s;
+      animation-name: doodlePop, doodleSpin;
+      animation-duration: 0.5s, 6s;
+      animation-delay: 2.2s, 2.7s;
+      animation-fill-mode: forwards, none;
+      animation-iteration-count: 1, infinite;
+      animation-timing-function: ease-out, linear;
+    }
+
+    @keyframes doodlePop {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes doodleFloat {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    @keyframes doodleSpin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        max-width: 100%;
+        padding: 3rem 1.5rem;
+      }
+
+      /* .doodle {
+        display: none;
+      } */
+    }
+  </style>
 </head>
 
-<body class="white-vertion black-bg">
-    <!-- Start Loader -->
-    <div class="section-loader">
-        <div class="loader">
-            <div></div>
-            <div></div>
-        </div>
+<body>
+
+  <div class="card">
+    <div class="doodles">
+      <span class="doodle doodle-1">?</span>
+      <span class="doodle doodle-2">&gt;</span>
+      <span class="doodle doodle-3">~</span>
+      <span class="doodle doodle-4">&lt;</span>
+      <span class="doodle doodle-5">*</span>
     </div>
-    <!-- End Loader -->
-    <!--
-        ===================
-           NAVIGATION
-        ===================
-        -->
-    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav compensate-for-scrollbar" id="mh-header"
-        data-aos="fade-up" data-aos-offset="0">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg mh-nav nav-btn">
-                    <a class="navbar-brand" href="#mh-home"
-                        style="display: inline-block; position: relative; z-index: 1;">
-                        <span style="display: inline-block;">
-                            <object type="image/svg+xml" height="40" id="myLogo" data="assets/images/me_animated.svg"
-                                style="position: relative; z-index: -1">
-                                <img id="myLogoFallback" src="assets/images/me_animated.svg" alt="logo">
-                            </object>
-                        </span>
-                        <!-- <img src="assets/images/me_animated.svg" id="myLogo" alt="" 
-                            style="height:40px"> -->
-                    </a>
-                    <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bgColor" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-0 ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#mh-home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-experience">Experiences</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mh-contact">Contact</a>
-                            </li>
-                            <li class="nav-item" style="display: flex; align-items: center; height:47px;">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-                                    <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
 
-
-
-    <!--
-        ===================
-            HOME 
-        ===================
-        -->
-    <section class="mh-home" id="mh-home">
-        <div class="home-ovimg">
-            <div class="container">
-                <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
-                    <div class="col-sm-6">
-                        <div class="mh-header-info">
-                            <div class="mh-promo" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                                <span>Hello, I'm</span>
-                            </div>
-
-                            <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Alex Lykesas</h2>
-                            <h4 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">iOS Developer -
-                                Machine Learning
-                            </h4>
-
-                            <ul>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                    <a href="mailto:alexlykesas@gmail.com">
-                                        <i class="fas fa-envelope"></i>alexlykesas@gmail.com</a>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                                    <a href="tel:+306978122549" class="phonenumber">
-                                        <i class="fas fa-phone"></i>
-                                        +30 6978122549
-                                    </a>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                                    <a href="https://goo.gl/maps/nvfzAgDv8iqwK3KR8" target="_blank">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <address>Thessaloniki, Greece</address>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="social-icon" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
-                                <li><a href="https://github.com/alexookah"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/alexlykesas/"><i
-                                            class="fab fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="hero-img" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                            <div class="img-border">
-                                <!-- //todo: fix this blue on the image -->
-                                <img src="assets/images/me.jpg" alt="cv picture" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--
-        ==================
-            ABOUT
-        =================
-        -->
-    <section class="mh-about" id="mh-about">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-about-img shadow-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                        <img src="assets/images/me-working.svg" alt="me working animated" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-about-inner">
-                        <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">About Me</h2>
-                        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Hello, I’m an
-                            iOS developer, based in Thessaloniki.
-                            I have rich experience in iOS development
-                            and machine learning. I am also good at</p>
-                        <div class="mh-about-tag" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                            <ul>
-                                <li><span>Swift</span></li>
-                                <li><span>Python</span></li>
-                                <li><span>Angular</span></li>
-                                <li><span>Firebase</span></li>
-                                <li><span>Git</span></li>
-                                <li><span>JavaScript</span></li>
-                            </ul>
-                        </div>
-                        <a href="alex_lykesas_resume.pdf" target="_blank" class="btn btn-fill" data-aos="fade-up"
-                            data-aos-duration="800" data-aos-delay="400">Download CV <i class="fas fa-download"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--
-        ===================
-           SERVICE
-        ===================
-        -->
-    <section class="mh-service">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="col-sm-12 text-center section-title" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="200">
-                    <h2>What I do</h2>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg" data-aos="fade-up" data-aos-duration="800"
-                        data-aos-delay="700">
-                        <i class="fas fa-object-ungroup" style="color: #64c0ff"></i>
-                        <h3>iOS App Development</h3>
-                        <p>
-                            <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. -->
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg" data-aos="fade-up" data-aos-duration="800"
-                        data-aos-delay="300">
-                        <i class="fas fa-brain purple-color"></i>
-                        <h3>Machine Learning</h3>
-                        <p>
-                            <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. -->
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg" data-aos="fade-up" data-aos-duration="800"
-                        data-aos-delay="500">
-                        <i class="fas fa-code" style="color: #e88770"></i>
-                        <h3>Web Development</h3>
-                        <p>
-                            <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row section-separator">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg" data-aos="fade-up" data-aos-duration="800"
-                        data-aos-delay="700">
-                        <i class="fas fa-drum" style="color: #0bceaf;cursor: pointer"></i>
-                        <h3>Drummer @ <a href="https://comewithreverse.com">CWR</a></h3>
-                        <p>
-                            <!-- Band member in Come with reverse -->
-                            <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. -->
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="mh-service-item shadow-1 dark-bg" data-aos="fade-up" data-aos-duration="800"
-                        data-aos-delay="300">
-                        <i class="fas fa-network-wired" style="color: #c751c3"></i>
-                        <h3>Networks & Wifi</h3>
-                        <p>
-                            <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                            magna aliquam erat volutpat. -->
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--
-        ===================
-           SKILLS
-        ===================
-        -->
-    <section class="mh-skills" id="mh-skills">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="section-title text-center col-sm-12">
-                    <!--<h2>Skills</h2>-->
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-skills-inner">
-                        <div class="mh-professional-skill" data-aos="fade-up" data-aos-duration="800"
-                            data-aos-delay="300">
-                            <h3>Technical Skills</h3>
-                            <div class="each-skills">
-                                <div class="candidatos">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="nome">Swift</div>
-                                            <!-- <div class="percentagem-num">86%</div> -->
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentagem" style="width: 86%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="candidatos">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="nome">Python</div>
-                                            <!-- <div class="percentagem-num">68%</div> -->
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentagem" style="width: 68%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="candidatos">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="nome">JavaScript</div>
-                                            <!-- <div class="percentagem-num">17%</div> -->
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentagem" style="width: 42%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="candidatos">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="nome">TypeScript</div>
-                                            <!-- <div class="percentagem-num">45%</div> -->
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentagem" style="width: 38%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="candidatos">
-                                    <div class="parcial">
-                                        <div class="info">
-                                            <div class="nome">PHP</div>
-                                            <!-- <div class="percentagem-num">38%</div> -->
-                                        </div>
-                                        <div class="progressBar">
-                                            <div class="percentagem" style="width: 29%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="mh-professional-skills" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                        <h3>Professional Skills</h3>
-                        <ul class="mh-professional-progress">
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="100"></div>
-                                <div class="pr-skill-name">Creativity</div>
-                            </li>
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="100"></div>
-                                <div class="pr-skill-name">Adaptability</div>
-                            </li>
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="100"></div>
-                                <div class="pr-skill-name">Team Work</div>
-                            </li>
-                            <li>
-                                <div class="mh-progress mh-progress-circle" data-progress="100"></div>
-                                <div class="pr-skill-name">Problem Solving</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--
-        ===================
-           EXPERIENCES
-        ===================
-        -->
-    <section class="mh-experince" id="mh-experience">
-        <div class="bolor-overlay">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="mh-education">
-                            <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Education</h3>
-                            <div class="mh-education-deatils">
-                                <!-- Education Institutes-->
-                                <div class="mh-education-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="300">
-                                    <h4>Digital Media - Artificial Intelligence (MSc) <a
-                                            href="https://dmci.csd.auth.gr/en/">
-                                            Aristotle University of Thessaloniki</a></h4>
-                                    <div class="mh-eduyear">2017-2019</div>
-                                    <p>Graduation thesis: Hotel Review Sentiment Analysis using
-                                        Natural Language Processing <a
-                                            href="http://ikee.lib.auth.gr/record/314207/files/GRI-2020-26664.pdf"
-                                            target="_blank">
-                                            <i class="fas fa-paperclip"
-                                                style="padding-left:5px;font-size:17px;"></i></a>
-                                        </i>
-                                    </p>
-                                </div>
-                                <!-- Education Institutes-->
-                                <div class="mh-education-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="500">
-                                    <h4>Informatics Engineering (BSc) <a href="https://cs.uowm.gr/en/">School of
-                                            Sciences, University of Western Macedonia</a>
-                                    </h4>
-                                    <div class="mh-eduyear">2007-2015</div>
-                                    <p>Graduation thesis: Recipe recommender iOS native app based on the ingredients the
-                                        user has in his possession.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="mh-work">
-                            <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Work Experience</h3>
-                            <div class="mh-experience-deatils">
-
-                                <div class="mh-work-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="400">
-                                    <h4>Senior iOS Developer <a href="https://league.com/" target="_blank">League</a>
-                                    </h4>
-                                    <div class="mh-eduyear">Nov 2022 - Nov 2023</div>
-                                    <ul class="work-responsibility">
-                                        <li class="list-experience">
-                                            Participated in the Messaging Team, leading the implementation of Chat,
-                                            utilizing MVVMC, Combine for reactive programming, and emphasizing TDD
-                                            and unit testing to ensure optimal functionality and accessibility.
-                                        </li>
-                                        <li class="list-experience">
-                                            Improved core design system, playing a key role in resolving critical bugs
-                                            and
-                                            issues, recognized as the backbone of these crucial fixes.
-                                        </li>
-                                        <li class="list-experience">
-                                            Collaborated with multiple teams and iOS developers, contributing
-                                            significantly to the company's SDK library by addressing bugs and enhancing
-                                            features for various client applications.
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Education Institutes-->
-                                <div class="mh-work-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="400">
-                                    <h4>iOS Developer <a href="https://www.untis.at/en" target="_blank">Untis GmbH</a>
-                                    </h4>
-                                    <div class="mh-eduyear">Feb 2021 - Oct 2022</div>
-                                    <ul class="work-responsibility">
-                                        <li class="list-experience">
-                                            Improved codebase, implemented SwiftLint and migrated cocoapods to SPM
-                                            libraries.
-                                        </li>
-                                        <li class="list-experience">
-                                            Build the network persistance for offline mode functionalities.
-                                        </li>
-                                        <li class="list-experience">
-                                            Created automation of iOS deployments using Bitrise.
-                                        </li>
-                                        <li class="list-experience">
-                                            Constant collaboration with Product Owners to design and implement new
-                                            features.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Education Institutes-->
-                                <div class="mh-work-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="400">
-                                    <h4>Team Leader - iOS Developer <a href="https://smartupweb.com"
-                                            target="_blank">Smartup</a></h4>
-                                    <div class="mh-eduyear">Oct 2016 - Jan 2021</div>
-                                    <ul class="work-responsibility">
-                                        <li class="list-experience">
-                                            Create apps using the latest Swift language, and train employees on
-                                            technologies resulted in having been promoted within a year.
-                                        </li>
-                                        <li class="list-experience">
-                                            Develop app workflow using RESTful JSON APIs or Firebase to ensure
-                                            accurate data from backend services and populating interfaces
-                                        </li>
-                                        <li class="list-experience">
-                                            Lead in using Cocoapods libraries to speed up the development process while
-                                            also contributing to their Github communities
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Education Institutes-->
-                                <div class="mh-work-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="600">
-                                    <h4>Web Developer <a href="https://marsala.gr" target="_blank">Marsala
-                                            Textiles</a></h4>
-                                    <div class="mh-eduyear">Feb 2017 - Dec - 2017 (11 months)</div>
-                                    <ul class="work-responsibility">
-                                        <li class="list-experience">Demonstrated outstanding leadership in
-                                            developing an Order Management System website using PHP, JavaScript, and
-                                            MySQL.</li>
-                                        <li class="list-experience">Collaborated with other employees to plan and
-                                            design the website while
-                                            determining the requirements before the development.</li>
-                                        <li class="list-experience">Implemented security measures to ensure that
-                                            all employees will only login
-                                            from the office with a dynamic IP address.</li>
-                                    </ul>
-                                </div>
-                                <!-- Education Institutes-->
-                                <div class="mh-work-item dark-bg" data-aos="fade-up" data-aos-duration="800"
-                                    data-aos-delay="700">
-                                    <h4>Internship <a href="https://foodtecsolutions.com" target="_blank">Foodtec
-                                            Solutions</a>
-                                    </h4>
-                                    <div class="mh-eduyear">Mar 2014 - Aug (6 months)</div>
-                                    <ul class="work-responsibility">
-                                        <li class="list-experience">Provided leadership in developing in-house
-                                            tools for DevOps while optimizing existing support and maintenance
-                                            processes.</li>
-                                        <li class="list-experience">Led in managing server maintenance, network
-                                            administration, and system
-                                            administration to ensure full business productivity.</li>
-                                        <li class="list-experience">Spearheaded as a Java Developer while utilizing
-                                            various platforms including
-                                            Linux Bash Scripting, to develop tools and systems.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--
-        ===================
-           PORTFOLIO
-        ===================
-        -->
-
-    <section class="mh-portfolio" id="mh-portfolio">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="section-title col-sm-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <h3>Portfolio</h3>
-                </div>
-                <div class="part col-sm-12">
-                    <div class="portfolio-nav col-sm-12" id="filter-button">
-                        <ul>
-                            <li data-filter="*" class="current" data-aos="fade-up" data-aos-duration="800"
-                                data-aos-delay="100"> <span>All</span></li>
-                            <li data-filter=".professional" data-aos="fade-up" data-aos-duration="800"
-                                data-aos-delay="200"><span>Professional</span></li>
-                            <li data-filter=".personalAndOther" data-aos="fade-up" data-aos-duration="800"
-                                data-aos-delay="300">
-                                <span>Personal & Other Work</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mh-project-gallery col-sm-12" id="project-gallery" data-aos="fade-up"
-                        data-aos-duration="800" data-aos-delay="500">
-                        <div class="portfolioContainer row">
-                        </div> <!-- End: .grid .project-gallery -->
-                    </div> <!-- End: .grid .project-gallery -->
-                </div> <!-- End: .part -->
-            </div> <!-- End: .row -->
-        </div>
-    </section>
-
-    <!--
-        ===================
-           FOOTER 1
-        ===================
-        -->
-    <footer class="mh-footer" id="mh-contact">
-        <div class="image-bg">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-12 section-title" data-aos="fade-down" data-aos-duration="800"
-                        data-aos-delay="200">
-                        <h3>Contact Me</h3>
-                    </div>
-                    <div class="col-sm-12 mh-footer-address">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-2"></div>
-                            <a href="mailto:alexlykesas@gmail.com">
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="mh-address-footer-item dark-bg shadow-1" data-aos="fade-up"
-                                        data-aos-duration="800" data-aos-delay="500">
-                                        <div class="each-icon">
-                                            <i class="far fa-envelope"></i>
-                                        </div>
-                                        <div class="each-info">
-                                            <h4>Email</h4>
-                                            <a href="mailto:alexlykesas@gmail.com">alexlykesas@gmail.com</a><br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="col-sm-12 col-md-4">
-                                <a href="tel:+306978122549" class="phonenumber">
-                                    <div class="mh-address-footer-item dark-bg shadow-1" data-aos="fade-up"
-                                        data-aos-duration="800" data-aos-delay="700">
-                                        <div class="each-icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="each-info">
-                                            <h4>Phone</h4>
-                                            +30 6978122549<br>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-2"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 mh-copyright" data-aos="fade-up" data-aos-offset="0">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="text-left text-xs-center">
-                                    <p>All right reserved Alex Lykesas @ 2021</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="social-icon">
-                                    <li><a href="https://github.com/alexookah"><i class="fab fa-github"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/alexlykesas/">
-                                            <i class="fab fa-linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--
-    ==============
-    * JS Files *
-    ==============
-    -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <!-- jQuery -->
-    <script src="assets/plugins/js/jquery.min.js"></script>
-    <!-- popper -->
-    <script src="assets/plugins/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/plugins/js/owl.carousel.js"></script>
-    <!-- validator -->
-    <script src="assets/plugins/js/validator.min.js"></script>
-    <!-- aos -->
-    <script src="assets/plugins/js/aos.js"></script>
-    <!-- mixin js-->
-    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
-    <!-- circle progress-->
-    <script src="assets/plugins/js/circle-progress.js"></script>
-    <!-- jquery nav -->
-    <script src="assets/plugins/js/jquery.nav.js"></script>
-    <!-- Fancybox js-->
-    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
-    <!-- isotope js-->
-    <script src="assets/plugins/js/isotope.pkgd.js"></script>
-    <!-- packery js-->
-    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
-    <!-- BlueImp Gallery -->
-    <script src="assets/plugins/blueimp/js/blueimp-gallery.min.js"></script>
-    <!-- Custom Scripts-->
-    <script src="assets/js/custom-scripts.js"></script>
-    <script src="assets/js/theme.js"></script>
-
+    <p class="subtitle">Hang tight</p>
+    <h1>Under (re)construction</h1>
+    <p class="description">
+      I'm behind the scenes cooking up a fresh portfolio that actually does me justice. <br>
+      Back shortly with something worth clicking around!
+    </p>
+    <div class="btn_container">
+      <a href="https://www.linkedin.com/in/alexlykesas/" target="_blank" class="btn">
+        Linkedin
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+      <a href="https://github.com/alexookah" target="_blank" class="btn">
+        Github
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+      <a href="https://alexlykesas.com/alex_lykesas_resume.pdf" target="_blank" class="btn">
+        Download CV
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
 </body>
 
 </html>
